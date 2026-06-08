@@ -3,205 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>IELTS Placement Test | HCT</title>
+<title>IELTS Placement Test | HCT NCHR 0103</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#fdf8f2,#fef3e2 50%,#fdf0e0);min-height:100vh;color:#2d2d2d}
-.screen{display:none}.screen.active{display:block}
-.container{max-width:880px;margin:0 auto;padding:20px 16px 60px}
-.card{background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.09);border-radius:18px;padding:28px;margin-bottom:20px;backdrop-filter:blur(8px)}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:11px 26px;border-radius:50px;border:none;cursor:pointer;font-size:.95em;font-weight:600;transition:all .25s;white-space:nowrap}
-.btn-p{background:linear-gradient(90deg,#00c6fb,#7b2ff7);color:#fff}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,198,251,.3)}
-.btn-s{background:rgba(255,255,255,.08);color:#ccc;border:1px solid rgba(255,255,255,.12)}
-.btn-s:hover{background:rgba(255,255,255,.13)}
-.btn-d{background:rgba(255,60,60,.12);color:#ff8080;border:1px solid rgba(255,60,60,.25)}
+.wrap{max-width:880px;margin:0 auto;padding:20px 16px 60px}
+.card{background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:18px;padding:28px;margin-bottom:20px;box-shadow:0 3px 14px rgba(0,0,0,.07)}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:11px 26px;border-radius:50px;border:none;cursor:pointer;font-size:.95em;font-weight:600;transition:all .22s;white-space:nowrap}
+.btn-p{background:linear-gradient(90deg,#0099cc,#6644cc);color:#fff}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,153,204,.3)}
+.btn-s{background:#f0f0f0;color:#444;border:1px solid #ddd}
+.btn-s:hover{background:#e5e5e5}
+.btn-d{background:rgba(200,0,0,.07);color:#cc2200;border:1px solid rgba(200,0,0,.2)}
+/* HERO */
 .hero{text-align:center;padding:36px 20px 16px}
-.hero h1{font-size:2em;background:linear-gradient(90deg,#00c6fb,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
-.hero p{color:#888;font-size:.93em}
+.hero h1{font-size:2em;background:linear-gradient(90deg,#0099cc,#6644cc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
+.hero .sub{color:#888;font-size:.93em;margin-bottom:4px}
+.hero .course{font-size:.85em;color:#aaa;font-weight:600;letter-spacing:.5px}
+/* INFO GRID */
 .ig{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
-.ib{background:rgba(255,255,255,.8);border:1px solid rgba(0,0,0,.07);border-radius:12px;padding:15px 10px;text-align:center}
+.ib{background:#fafafa;border:1px solid #eee;border-radius:12px;padding:15px 10px;text-align:center}
 .ii{font-size:1.6em;margin-bottom:5px}.il{font-size:.75em;color:#888}.iv{font-size:.9em;font-weight:600;color:#333;margin-top:3px}
+/* SECTION ROW */
 .sr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
 .sb{border-radius:12px;padding:14px;text-align:center}
-.sb-v{background:rgba(0,160,210,.08);border:1px solid rgba(0,160,210,.22)}
-.sb-r{background:rgba(130,60,210,.08);border:1px solid rgba(130,60,210,.22)}
-.sb-g{background:rgba(210,120,0,.08);border:1px solid rgba(210,120,0,.22)}
+.sb-v{background:rgba(0,153,204,.07);border:1px solid rgba(0,153,204,.2)}
+.sb-r{background:rgba(102,68,204,.07);border:1px solid rgba(102,68,204,.2)}
+.sb-g{background:rgba(200,120,0,.07);border:1px solid rgba(200,120,0,.2)}
 .sn{font-weight:700;font-size:.88em;margin-bottom:4px}
-.sn-v{color:#00c6fb}.sn-r{color:#a855f7}.sn-g{color:#ff9a00}
-.sd{font-size:.78em;color:#778}
-.instr{background:rgba(255,210,0,.05);border:1px solid rgba(255,210,0,.13);border-radius:12px;padding:16px 20px;margin-bottom:20px}
-.instr h4{color:#ffd700;margin-bottom:9px;font-size:.88em}
-.instr ul{padding-left:18px;color:#aab;font-size:.86em;line-height:2.1}
-.nr label{font-size:.86em;color:#99a}
-.nr input{width:100%;margin-top:8px;padding:11px 15px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:9px;color:#fff;font-size:.96em;transition:border-color .2s;margin-bottom:18px}
-.nr input:focus{outline:none;border-color:#00c6fb}
-.nr input.err{border-color:#ff4444}
-.ar{display:flex;gap:10px;flex-wrap:wrap}
-.msg{margin-top:10px;font-size:.83em}
-/* TEST */
+.sn-v{color:#0077aa}.sn-r{color:#6644cc}.sn-g{color:#c87800}
+.sd{font-size:.78em;color:#888}
+/* INSTRUCTIONS */
+.instr{background:#fffbee;border:1px solid #e8d870;border-radius:12px;padding:16px 20px;margin-bottom:20px}
+.instr h4{color:#9a7200;margin-bottom:9px;font-size:.88em}
+.instr ul{padding-left:18px;color:#555;font-size:.86em;line-height:2.1}
+/* NAME INPUT */
+.nlabel{font-size:.88em;color:#555;display:block;margin-bottom:7px;font-weight:600}
+#inp-name{width:100%;padding:12px 16px;background:#fff;border:2px solid #ddd;border-radius:10px;color:#222;font-size:1em;transition:border-color .2s;margin-bottom:18px;outline:none}
+#inp-name:focus{border-color:#0099cc}
+#inp-name.err{border-color:#cc2200}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+#wmsg{font-size:.85em;min-height:20px}
+/* TEST SCREEN */
 .stabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
 .stab{padding:7px 15px;border-radius:20px;font-size:.8em;font-weight:600}
-.st-done{background:rgba(0,255,136,.1);color:#00e87a;border:1px solid rgba(0,255,136,.22)}
-.st-act{background:rgba(0,198,251,.1);color:#00c6fb;border:1px solid rgba(0,198,251,.28)}
-.st-pend{background:rgba(255,255,255,.04);color:#556;border:1px solid rgba(255,255,255,.07)}
-.tbar{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 18px;margin-bottom:14px}
-.tclock{font-size:1.5em;font-weight:800;font-family:'Courier New',monospace;color:#00c6fb;letter-spacing:2px}
-.tclock.warn{color:#ff9a00}.tclock.danger{color:#ff4444;animation:blink 1s infinite}
+.st-done{background:rgba(0,140,70,.1);color:#007a3d;border:1px solid rgba(0,140,70,.25)}
+.st-act{background:rgba(0,140,200,.1);color:#0077aa;border:1px solid rgba(0,140,200,.28)}
+.st-pend{background:#f0f0f0;color:#999;border:1px solid #ddd}
+.tbar{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:12px 18px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.tclock{font-size:1.5em;font-weight:800;font-family:'Courier New',monospace;color:#0077aa;letter-spacing:2px}
+.tclock.warn{color:#c87800}.tclock.danger{color:#cc2200;animation:blink 1s infinite}
 @keyframes blink{50%{opacity:.4}}
-.prow{display:flex;justify-content:space-between;font-size:.83em;color:#889;margin-bottom:6px}
-.ptr{height:7px;background:rgba(255,255,255,.08);border-radius:4px;margin-bottom:18px;overflow:hidden}
-.pf{height:100%;background:linear-gradient(90deg,#00c6fb,#a855f7);border-radius:4px;transition:width .3s}
-.alert{background:rgba(255,80,80,.1);border:1px solid rgba(255,80,80,.3);border-radius:8px;padding:10px 15px;color:#ff9090;font-size:.86em;margin-bottom:14px;display:none}
-.alert.show{display:block}
+.prow{display:flex;justify-content:space-between;font-size:.83em;color:#888;margin-bottom:6px}
+.ptr{height:7px;background:#eee;border-radius:4px;margin-bottom:18px;overflow:hidden}
+.pf{height:100%;background:linear-gradient(90deg,#0099cc,#6644cc);border-radius:4px;transition:width .3s}
+.alertbox{background:#fff3f3;border:1px solid #ffcccc;border-radius:8px;padding:10px 15px;color:#cc2200;font-size:.86em;margin-bottom:14px;display:none}
+.alertbox.show{display:block}
 /* QUESTIONS */
-.qcard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;margin-bottom:13px}
-.qnum{font-size:.73em;color:#7b5cf5;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
-.qtext{font-size:1em;color:#dde;line-height:1.65;margin-bottom:13px}
+.qcard{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:20px;margin-bottom:13px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.qnum{font-size:.73em;color:#6644cc;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
+.qtext{font-size:1em;color:#222;line-height:1.65;margin-bottom:13px}
 .opts{display:flex;flex-direction:column;gap:7px}
-.opt{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:9px;cursor:pointer;transition:all .17s;font-size:.93em;color:#ccdd;user-select:none}
-.opt:hover{background:rgba(0,198,251,.08);border-color:rgba(0,198,251,.25)}
-.opt.sel{background:rgba(123,47,247,.18);border-color:#7b2ff7;color:#e0d0ff}
-.oltr{width:27px;height:27px;border-radius:50%;background:rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center;font-size:.78em;font-weight:700;flex-shrink:0;transition:background .17s}
-.opt.sel .oltr{background:#7b2ff7;color:#fff}
+.opt{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#fafafa;border:1px solid #e0e0e0;border-radius:9px;cursor:pointer;transition:all .17s;font-size:.93em;color:#333;user-select:none}
+.opt:hover{background:rgba(0,140,200,.07);border-color:rgba(0,140,200,.35)}
+.opt.sel{background:rgba(102,68,204,.1);border-color:#6644cc;color:#3a1a99}
+.oltr{width:27px;height:27px;border-radius:50%;background:#eee;display:flex;align-items:center;justify-content:center;font-size:.78em;font-weight:700;flex-shrink:0;transition:background .17s}
+.opt.sel .oltr{background:#6644cc;color:#fff}
 /* READING */
-.passage{background:rgba(0,0,0,.22);border-left:3px solid #00c6fb;border-radius:10px;padding:20px 22px;margin-bottom:16px;line-height:1.85;font-size:.91em;color:#bcc}
-.passage h3{color:#00c6fb;font-size:.97em;margin-bottom:11px;font-weight:700}
+.passage{background:#f9f6f0;border-left:3px solid #0099cc;border-radius:10px;padding:20px 22px;margin-bottom:16px;line-height:1.85;font-size:.91em;color:#444}
+.passage h3{color:#0077aa;font-size:.97em;margin-bottom:11px;font-weight:700}
 .passage p{margin-bottom:9px}.passage p:last-child{margin-bottom:0}
-.rnote{font-size:.83em;color:#a97fff;font-weight:600;margin-bottom:13px;padding:7px 13px;background:rgba(169,127,255,.07);border-radius:8px}
-/* BETWEEN SECTIONS */
+.rnote{font-size:.83em;color:#6644cc;font-weight:600;margin-bottom:13px;padding:7px 13px;background:rgba(102,68,204,.07);border-radius:8px}
+/* BETWEEN */
 .bscard{text-align:center;padding:50px 24px}
 .bscard .icon{font-size:3.5em;margin-bottom:13px}
-.bscard h2{font-size:1.55em;color:#00e87a;margin-bottom:8px}
-.bscard p{color:#aab;line-height:1.75}
+.bscard h2{font-size:1.55em;color:#007a3d;margin-bottom:8px}
+.bscard p{color:#666;line-height:1.75}
 /* NAV */
 .nav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;flex-wrap:wrap;gap:10px}
-.unans{font-size:.85em;color:#ff9090}
-.unans.ok{color:#00e87a}
-/* RESULTS */
-.cert{background:linear-gradient(135deg,#0d1b2a,#162033);border:2px solid rgba(0,198,251,.5);border-radius:22px;padding:40px 36px;text-align:center;position:relative;overflow:hidden}
-.cert::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,198,251,.07) 0%,transparent 60%);pointer-events:none}
-.cert>*{position:relative}
-.corg{font-size:.78em;color:#667;text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}
-.ctitle{font-size:1.45em;color:#fff;font-weight:700;margin-bottom:4px}
-.csub{font-size:.82em;color:#778;margin-bottom:16px}
-.cname{font-size:1.65em;color:#fff;font-weight:800;margin-bottom:4px}
-.cdate{font-size:.8em;color:#667;margin-bottom:18px}
+.unans{font-size:.85em;color:#cc3300}.unans.ok{color:#007a3d}
+/* CERTIFICATE */
+.cert{background:linear-gradient(135deg,#fffdf8,#fff9f0);border:2px solid rgba(0,140,200,.35);border-radius:22px;padding:40px 36px;text-align:center}
+.corg{font-size:.78em;color:#aaa;text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}
+.ctitle{font-size:1.45em;color:#222;font-weight:700;margin-bottom:4px}
+.csub{font-size:.82em;color:#888;margin-bottom:16px}
+.cname{font-size:1.65em;color:#222;font-weight:800;margin-bottom:4px}
+.cdate{font-size:.8em;color:#aaa;margin-bottom:18px}
 .cbadge{display:inline-block;padding:10px 26px;border-radius:50px;font-size:1.15em;font-weight:800;margin-bottom:13px}
-.bg-5{background:linear-gradient(90deg,#00e87a,#00c6fb);color:#051a0a}
+.bg-5{background:linear-gradient(90deg,#00c878,#0099cc);color:#051a0a}
 .bg-45{background:linear-gradient(90deg,#ffd700,#ff9a00);color:#1a0f00}
 .bg-lo{background:linear-gradient(90deg,#ff6b6b,#ee5a24);color:#fff}
-.ctag{color:#bbc;font-size:.88em;line-height:1.65;max-width:520px;margin:0 auto 22px}
+.ctag{color:#555;font-size:.88em;line-height:1.65;max-width:520px;margin:0 auto 22px}
 .sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
-.sbox{background:rgba(255,255,255,.04);border-radius:12px;padding:15px 10px}
-.sbig{font-size:1.65em;font-weight:800;color:#00c6fb}
-.ssm{font-size:.76em;color:#889;margin-top:4px;line-height:1.55}
-.stotal{display:inline-block;background:rgba(0,198,251,.07);border:1px solid rgba(0,198,251,.2);border-radius:12px;padding:14px 28px;margin-bottom:20px}
-.advice{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:19px 22px;text-align:left;margin-top:4px}
-.advice h4{color:#00c6fb;margin-bottom:11px;font-size:.92em}
-.advice ul{padding-left:18px;line-height:2.15;color:#bbc;font-size:.87em}
-.cfoot{color:#3a4a5a;font-size:.76em;margin-top:20px}
-/* TOAST */
-.toast{position:fixed;bottom:68px;right:18px;background:rgba(0,232,122,.12);border:1px solid rgba(0,232,122,.3);color:#00e87a;padding:10px 18px;border-radius:10px;font-size:.86em;z-index:9999;animation:fiu .3s}
+.sbox{background:#f8f8f8;border-radius:12px;padding:15px 10px}
+.sbig{font-size:1.65em;font-weight:800;color:#0077aa}
+.ssm{font-size:.76em;color:#888;margin-top:4px;line-height:1.55}
+.stotal{display:inline-block;background:rgba(0,140,200,.07);border:1px solid rgba(0,140,200,.2);border-radius:12px;padding:14px 28px;margin-bottom:20px}
+.advice{background:#f8f8f8;border:1px solid #e8e8e8;border-radius:14px;padding:19px 22px;text-align:left;margin-top:4px}
+.advice h4{color:#0077aa;margin-bottom:11px;font-size:.92em}
+.advice ul{padding-left:18px;line-height:2.15;color:#444;font-size:.87em}
+.cfoot{color:#bbb;font-size:.76em;margin-top:20px}
+/* UTILS */
+.toast{position:fixed;bottom:68px;right:18px;background:#efffec;border:1px solid #b2e8b2;color:#2a7a2a;padding:10px 18px;border-radius:10px;font-size:.86em;z-index:9999;animation:fiu .3s;box-shadow:0 2px 10px rgba(0,0,0,.1)}
 @keyframes fiu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.scrollbtn{position:fixed;bottom:18px;right:18px;width:40px;height:40px;border-radius:50%;background:rgba(0,198,251,.15);border:1px solid rgba(0,198,251,.3);color:#00c6fb;cursor:pointer;font-size:1.1em;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.scrollbtn:hover{background:rgba(0,198,251,.25)}
-@media(max-width:600px){.ig{grid-template-columns:1fr 1fr}.sr{grid-template-columns:1fr}.sgrid{grid-template-columns:1fr 1fr 1fr}.hero h1{font-size:1.6em}.cert{padding:28px 18px}}
-@media print{body{background:#fff;color:#111}.no-print{display:none!important}.cert{border:2px solid #0099cc;background:#fff;color:#111}.ctitle,.cname{color:#111}.corg,.csub,.cdate,.cfoot{color:#555}.advice{background:#f8f8f8;border:1px solid #ddd}.sbox{background:#f8f8f8}.sbig{color:#0099cc}.advice h4{color:#0099cc}}
+.scrollbtn{position:fixed;bottom:18px;right:18px;width:40px;height:40px;border-radius:50%;background:rgba(0,140,200,.15);border:1px solid rgba(0,140,200,.3);color:#0077aa;cursor:pointer;font-size:1.1em;display:flex;align-items:center;justify-content:center}
+@media(max-width:600px){.ig{grid-template-columns:1fr 1fr}.sr{grid-template-columns:1fr}.sgrid{grid-template-columns:repeat(3,1fr)}.hero h1{font-size:1.6em}.cert{padding:26px 16px}}
+@media print{.no-print{display:none!important}.cert{border:2px solid #0099cc}.cfoot,.corg,.csub,.cdate{color:#666}}
 </style>
 </head>
 <body>
 
 <!-- WELCOME -->
-<div id="scr-w" class="screen active">
-<div class="container">
-<div class="hero">
-  <div style="font-size:3.2em;margin-bottom:10px">📚</div>
-  <h1>IELTS Placement Test</h1>
-  <p>B1 English Level &nbsp;·&nbsp; Target Band 4.5 – 5</p>
-  <p style="font-size:.85em;color:#aaa;margin-top:4px;font-weight:600;letter-spacing:.5px">HCT NCHR 0103</p>
-</div>
-<div class="card">
-  <div class="ig">
-    <div class="ib"><div class="ii">📝</div><div class="il">Questions</div><div class="iv">60 Total</div></div>
-    <div class="ib"><div class="ii">⏱️</div><div class="il">Total Time</div><div class="iv">70 Minutes</div></div>
-    <div class="ib"><div class="ii">🎯</div><div class="il">Sections</div><div class="iv">3 Parts</div></div>
+<div id="scr-w">
+<div class="wrap">
+  <div class="hero">
+    <div style="font-size:3.2em;margin-bottom:10px">📚</div>
+    <h1>IELTS Placement Test</h1>
+    <p class="sub">B1 English Level &nbsp;·&nbsp; Target Band 4.5 – 5 &nbsp;·&nbsp; Higher Colleges of Technology</p>
+    <p class="course">HCT NCHR 0103</p>
   </div>
-  <div class="sr">
-    <div class="sb sb-v"><div class="sn sn-v">📗 Vocabulary</div><div class="sd">20 Questions · 20 min</div></div>
-    <div class="sb sb-r"><div class="sn sn-r">📖 Reading</div><div class="sd">20 Questions · 30 min</div></div>
-    <div class="sb sb-g"><div class="sn sn-g">✏️ Grammar</div><div class="sd">20 Questions · 20 min</div></div>
+  <div class="card">
+    <div class="ig">
+      <div class="ib"><div class="ii">📝</div><div class="il">Questions</div><div class="iv">60 Total</div></div>
+      <div class="ib"><div class="ii">⏱️</div><div class="il">Total Time</div><div class="iv">70 Minutes</div></div>
+      <div class="ib"><div class="ii">🎯</div><div class="il">Sections</div><div class="iv">3 Parts</div></div>
+    </div>
+    <div class="sr">
+      <div class="sb sb-v"><div class="sn sn-v">📗 Vocabulary</div><div class="sd">20 Questions · 20 min</div></div>
+      <div class="sb sb-r"><div class="sn sn-r">📖 Reading</div><div class="sd">20 Questions · 30 min</div></div>
+      <div class="sb sb-g"><div class="sn sn-g">✏️ Grammar</div><div class="sd">20 Questions · 20 min</div></div>
+    </div>
+    <div class="instr">
+      <h4>📌 Instructions</h4>
+      <ul>
+        <li>Complete each section fully before moving to the next.</li>
+        <li>You must answer <strong>all 20 questions</strong> before submitting each section.</li>
+        <li>The timer counts down — submit before time runs out!</li>
+        <li>Use <strong>Save Progress</strong> at any point to pause and return later.</li>
+        <li>A personalised IELTS certificate will appear at the end.</li>
+      </ul>
+    </div>
+    <label class="nlabel" for="inp-name">Your full name (for the certificate):</label>
+    <input type="text" id="inp-name" placeholder="e.g. Fatima Al Hashmi" autocomplete="off">
+    <div class="btn-row">
+      <button id="btn-start" class="btn btn-p">Start Test ➜</button>
+      <button id="btn-load" class="btn btn-s no-print">📂 Load Saved Progress</button>
+    </div>
+    <div id="wmsg" style="font-size:.85em;min-height:20px"></div>
   </div>
-  <div class="instr">
-    <h4>📌 Instructions</h4>
-    <ul>
-      <li>Complete each section fully before moving to the next.</li>
-      <li>You must answer <strong>all 20 questions</strong> before submitting each section.</li>
-      <li>The timer counts down — submit before time runs out!</li>
-      <li>Use <strong>Save Progress</strong> at any point to pause and return later.</li>
-      <li>A personalised IELTS certificate will appear at the end.</li>
-    </ul>
-  </div>
-  <div class="nr">
-    <label>Your full name (for the certificate):</label>
-    <input type="text" id="inp-name" placeholder="e.g. Fatima Al Hashmi">
-  </div>
-  <div class="ar">
-    <button class="btn btn-p" onclick="startTest()">Start Test ➜</button>
-    <button class="btn btn-s no-print" onclick="loadProgress()">📂 Load Saved Progress</button>
-  </div>
-  <div id="wmsg" class="msg"></div>
-</div>
 </div>
 </div>
 
 <!-- TEST -->
-<div id="scr-t" class="screen">
-<div class="container">
+<div id="scr-t" style="display:none">
+<div class="wrap">
   <div class="stabs" id="stabs"></div>
   <div class="tbar">
     <div>
-      <div style="font-size:.8em;color:#778">Current Section</div>
-      <div id="slabel" style="font-weight:600;color:#dde;font-size:.93em"></div>
+      <div style="font-size:.8em;color:#aaa">Current Section</div>
+      <div id="slabel" style="font-weight:600;color:#333;font-size:.93em"></div>
     </div>
     <div style="display:flex;align-items:center;gap:13px">
       <div id="tclock" class="tclock no-print">00:00</div>
       <div class="no-print" style="display:flex;gap:7px">
-        <button class="btn btn-s" style="padding:8px 13px;font-size:.8em" onclick="saveProgress()">💾 Save</button>
-        <button class="btn btn-d" style="padding:8px 13px;font-size:.8em" onclick="confirmReset()">↺ Reset</button>
+        <button id="btn-save" class="btn btn-s" style="padding:8px 13px;font-size:.8em">💾 Save</button>
+        <button id="btn-reset" class="btn btn-d" style="padding:8px 13px;font-size:.8em">↺ Reset</button>
       </div>
     </div>
   </div>
   <div class="prow"><span id="plabel">0 / 20 answered</span><span id="scount">Section 1 of 3</span></div>
   <div class="ptr"><div class="pf" id="pfill" style="width:0%"></div></div>
-  <div id="alertbox" class="alert"></div>
+  <div id="alertbox" class="alertbox"></div>
   <div id="qarea"></div>
   <div class="nav no-print">
     <span id="unansmsg" class="unans"></span>
-    <button class="btn btn-p" onclick="submitSection()">Submit Section ➜</button>
+    <button id="btn-submit" class="btn btn-p">Submit Section ➜</button>
   </div>
 </div>
 </div>
 
 <!-- RESULTS -->
-<div id="scr-r" class="screen">
-<div class="container" style="padding-bottom:50px">
+<div id="scr-r" style="display:none">
+<div class="wrap" style="padding-bottom:50px">
   <div style="text-align:center;padding:28px 0 18px">
     <div style="font-size:3em;margin-bottom:9px">🎓</div>
-    <h2 style="color:#fff;font-size:1.65em">Your IELTS Placement Results</h2>
+    <h2 style="color:#222;font-size:1.65em">Your IELTS Placement Results</h2>
   </div>
   <div id="certarea"></div>
   <div style="text-align:center;margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap" class="no-print">
-    <button class="btn btn-p" onclick="window.print()">🖨️ Print Certificate</button>
-    <button class="btn btn-s" onclick="confirmReset()">↺ Start New Test</button>
+    <button id="btn-print" class="btn btn-p">🖨️ Print Certificate</button>
+    <button id="btn-newtest" class="btn btn-s">↺ Start New Test</button>
   </div>
 </div>
 </div>
 
-<button class="scrollbtn no-print" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="scrollbtn no-print" id="btn-top">↑</button>
 
 <script>
-// ── DATA ──────────────────────────────────────────────────────────
+// ── DATA ────────────────────────────────────────────────────────
 const QV=[
   {q:"The government plans to ___ new laws to protect the environment.",opts:["invite","introduce","include","increase"],ans:1},
   {q:"The company's annual ___ showed a 20% rise in sales last year.",opts:["stories","subjects","statistics","sections"],ans:2},
@@ -224,7 +224,6 @@ const QV=[
   {q:"The new policy will ___ all employees, regardless of their position.",opts:["effect","infect","affect","reflect"],ans:2},
   {q:"The book provides a ___ overview of modern history.",opts:["competitive","comparative","complicated","comprehensive"],ans:3}
 ];
-
 const P1=[
   "The use of technology in education has changed dramatically over the past two decades. In the past, students relied mainly on textbooks and face-to-face teaching. Today, however, digital tools such as tablets, laptops, and online learning platforms have become an essential part of many classrooms around the world.",
   "Supporters of educational technology argue that it makes learning more engaging and accessible. Students can access a wide range of resources online, study at their own pace, and receive immediate feedback on their work. Research has also shown that interactive software can help students understand difficult concepts more easily.",
@@ -238,7 +237,6 @@ const P2=[
   "Improving eating habits does not have to be difficult. Small changes, such as replacing sugary snacks with fruit or choosing whole grain bread instead of white bread, can make a significant difference over time. Cooking meals at home using fresh ingredients is also an effective way to control what you eat.",
   "Education is also a key factor in promoting healthy eating. When people understand the connection between diet and health, they are more likely to make better food choices. Schools and workplaces can play an important role by providing information about nutrition and offering healthier food options."
 ];
-
 const QR=[
   {p:1,type:"tfng",q:"Students in the past mainly used digital devices for learning.",opts:["True","False","Not Given"],ans:1},
   {p:1,type:"tfng",q:"Technology can make learning more engaging and accessible.",opts:["True","False","Not Given"],ans:0},
@@ -261,7 +259,6 @@ const QR=[
   {p:2,type:"mcq",q:"What simple change is suggested to improve a person's diet?",opts:["Eating more salt","Avoiding all grains","Replacing sugary snacks with fruit","Drinking less water"],ans:2},
   {p:2,type:"mcq",q:"Why is education important for promoting healthy eating?",opts:["It makes food cheaper","It helps people understand the diet-health connection","It removes the need for cooking","It provides free meals"],ans:1}
 ];
-
 const QG=[
   {q:"She ___ in this company for five years.",opts:["works","is working","has worked","worked"],ans:2},
   {q:"The report ___ by the manager yesterday.",opts:["wrote","was written","has written","is writing"],ans:1},
@@ -279,212 +276,276 @@ const QG=[
   {q:"This is the city ___ I was born.",opts:["which","who","where","when"],ans:2},
   {q:"She has been studying English ___ she was ten years old.",opts:["for","since","during","while"],ans:1},
   {q:"The children ___ allowed to leave early if they complete the test.",opts:["will","are","will be","have"],ans:2},
-  {q:"___ his hard work, he didn't pass the exam.",opts:["Despite","Although","However","Because of"],ans:0},
+  {q:"___ his hard work, he did not pass the exam.",opts:["Despite","Although","However","Because of"],ans:0},
   {q:"The book ___ I borrowed from the library was very interesting.",opts:["who","what","which","where"],ans:2},
   {q:"How long ___ you been waiting here?",opts:["did","do","have","are"],ans:2},
   {q:"If it ___ tomorrow, the match will be cancelled.",opts:["rains","will rain","rained","would rain"],ans:0}
 ];
-
 const SECS=[
-  {id:"vocab",  label:"📗 Vocabulary", qs:QV, secs:20*60},
-  {id:"reading",label:"📖 Reading",    qs:QR, secs:30*60},
-  {id:"grammar",label:"✏️ Grammar",   qs:QG, secs:20*60}
+  {id:"vocab",  label:"Vocabulary", icon:"📗", qs:QV, secs:1200},
+  {id:"reading",label:"Reading",    icon:"📖", qs:QR, secs:1800},
+  {id:"grammar",label:"Grammar",   icon:"✏️", qs:QG, secs:1200}
 ];
 
-// ── STATE ─────────────────────────────────────────────────────────
+// ── STATE ─────────────────────────────────────────────────────
 let S={
   name:"", sec:0,
   ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],
   scores:[null,null,null], timerSecs:0, tid:null, done:false
 };
 
-// ── WELCOME ───────────────────────────────────────────────────────
+// ── HELPERS ───────────────────────────────────────────────────
+function el(id){return document.getElementById(id);}
+function showScreen(id){
+  el("scr-w").style.display = id==="scr-w" ? "block" : "none";
+  el("scr-t").style.display = id==="scr-t" ? "block" : "none";
+  el("scr-r").style.display = id==="scr-r" ? "block" : "none";
+}
+function goTop(){window.scrollTo(0,0);}
+function toast(msg){
+  var t=document.createElement("div"); t.className="toast no-print"; t.textContent=msg;
+  document.body.appendChild(t); setTimeout(function(){t.remove();},3000);
+}
+
+// ── WELCOME ───────────────────────────────────────────────────
+function setMsg(m, ok){
+  el("wmsg").textContent=m;
+  el("wmsg").style.color=ok?"#007a3d":"#cc2200";
+}
+
 function startTest(){
-  const n=document.getElementById("inp-name").value.trim();
-  if(!n){document.getElementById("inp-name").classList.add("err");wMsg("⚠️ Please enter your name to begin.");return;}
-  document.getElementById("inp-name").classList.remove("err");
-  S={name:n,sec:0,ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],scores:[null,null,null],timerSecs:0,tid:null,done:false};
+  var n=el("inp-name").value.trim();
+  if(!n){
+    el("inp-name").classList.add("err");
+    setMsg("Please enter your name to begin.");
+    return;
+  }
+  el("inp-name").classList.remove("err");
+  setMsg("","");
+  S={
+    name:n, sec:0,
+    ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],
+    scores:[null,null,null], timerSecs:0, tid:null, done:false
+  };
   showSec(0);
 }
-function wMsg(m,ok){const e=document.getElementById("wmsg");e.textContent=m;e.style.color=ok?"#00e87a":"#ff9090";}
 
-// ── SECTION DISPLAY ───────────────────────────────────────────────
-function showSec(idx,resumeSecs){
+// ── SECTION ───────────────────────────────────────────────────
+function showSec(idx, resumeSecs){
   S.sec=idx;
-  S.timerSecs=resumeSecs!==undefined?resumeSecs:SECS[idx].secs;
+  S.timerSecs=(resumeSecs!==undefined)?resumeSecs:SECS[idx].secs;
   clearInterval(S.tid);
-  show("scr-t");
-  renderTabs(); renderQs(); startTimer(); goTop();
-}
-function show(id){["scr-w","scr-t","scr-r"].forEach(s=>document.getElementById(s).classList.toggle("active",s===id));}
-function goTop(){window.scrollTo(0,0);}
-
-function renderTabs(){
-  document.getElementById("stabs").innerHTML=SECS.map((s,i)=>{
-    const c=i<S.sec?"stab st-done":i===S.sec?"stab st-act":"stab st-pend";
-    return`<div class="${c}">${s.label}${i<S.sec?" ✓":""}</div>`;
-  }).join("");
-  document.getElementById("slabel").textContent=SECS[S.sec].label+(S.sec===1?" · 2 Passages":"")+` · ${S.sec===1?"30":"20"} min`;
-  document.getElementById("scount").textContent=`Section ${S.sec+1} of 3`;
-}
-
-function renderQs(){
-  const qs=SECS[S.sec].qs, ans=S.ans[S.sec];
-  let h="";
-  if(S.sec===1){
-    h+=mkPassage("📖 Passage 1 — Technology in Education",P1,"");
-    h+=`<div class="rnote">📌 Questions 1–10 are based on Passage 1. For Questions 1–5 choose True, False, or Not Given.</div>`;
-  }
-  for(let i=0;i<20;i++){
-    if(S.sec===1&&i===10){
-      h+=mkPassage("📖 Passage 2 — A Balanced Diet",P2,"margin-top:26px;");
-      h+=`<div class="rnote">📌 Questions 11–20 are based on Passage 2. For Questions 11–15 choose True, False, or Not Given.</div>`;
-    }
-    h+=mkQ(i,qs[i],ans[i]);
-  }
-  document.getElementById("qarea").innerHTML=h;
-  updProg();
-}
-function mkPassage(title,paras,style){
-  return`<div class="passage" style="${style}"><h3>${title}</h3>${paras.map(p=>`<p>${p}</p>`).join("")}</div>`;
-}
-function mkQ(i,q,sel){
-  const ltrs=q.type==="tfng"?["T","F","NG"]:["A","B","C","D"];
-  const opts=q.opts.map((o,j)=>`<div class="opt${sel===j?" sel":""}" onclick="pick(${i},${j})"><span class="oltr">${ltrs[j]}</span><span>${o}</span></div>`).join("");
-  return`<div class="qcard" id="qc-${i}"><div class="qnum">Question ${i+1} of 20</div><div class="qtext">${q.q}</div><div class="opts">${opts}</div></div>`;
-}
-function pick(qi,oi){
-  S.ans[S.sec][qi]=oi;
-  document.getElementById("qc-"+qi).querySelectorAll(".opt").forEach((el,j)=>el.classList.toggle("sel",j===oi));
-  updProg(); hideAlert();
-}
-function updProg(){
-  const done=S.ans[S.sec].filter(a=>a!==null).length;
-  document.getElementById("plabel").textContent=`${done} / 20 answered`;
-  document.getElementById("pfill").style.width=`${done/20*100}%`;
-  const left=20-done,el=document.getElementById("unansmsg");
-  if(left>0){el.textContent=`⚠️ ${left} question${left>1?"s":""} unanswered`;el.className="unans";}
-  else{el.textContent="✅ All questions answered — ready to submit!";el.className="unans ok";}
-}
-function hideAlert(){document.getElementById("alertbox").classList.remove("show");}
-
-// ── TIMER ─────────────────────────────────────────────────────────
-function startTimer(){
-  updClock();
-  S.tid=setInterval(()=>{S.timerSecs--;updClock();if(S.timerSecs<=0){clearInterval(S.tid);autoSubmit();}},1000);
-}
-function updClock(){
-  const m=Math.floor(S.timerSecs/60),s=S.timerSecs%60,el=document.getElementById("tclock");
-  el.textContent=`${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
-  el.className="tclock no-print";
-  if(S.timerSecs<=60)el.classList.add("danger");else if(S.timerSecs<=5*60)el.classList.add("warn");
-}
-function autoSubmit(){
-  S.ans[S.sec]=S.ans[S.sec].map(a=>a===null?-1:a);
-  scoreSec(); toast("⏰ Time's up! Your answers were submitted automatically.");
-}
-
-// ── SUBMIT ────────────────────────────────────────────────────────
-function submitSection(){
-  const left=S.ans[S.sec].filter(a=>a===null).length;
-  if(left>0){
-    const ab=document.getElementById("alertbox");
-    ab.textContent=`⚠️ You have ${left} unanswered question${left>1?"s":""}. Please answer all questions before submitting.`;
-    ab.classList.add("show"); goTop(); return;
-  }
-  clearInterval(S.tid); scoreSec();
-}
-function scoreSec(){
-  const qs=SECS[S.sec].qs;
-  const score=S.ans[S.sec].filter((a,i)=>a===qs[i].ans).length;
-  S.scores[S.sec]=score;
-  if(S.sec<2){S.sec++;showBetween(score);}
-  else{showResults();}
-}
-function showBetween(score){
-  const prev=SECS[S.sec-1].label, next=SECS[S.sec].label;
-  document.getElementById("qarea").innerHTML=`<div class="card bscard"><div class="icon">✅</div><h2>${prev} Complete!</h2><p style="margin:10px 0 8px">You scored <strong style="color:#00c6fb;font-size:1.1em">${score} / 20</strong> in this section.</p><p style="margin-bottom:28px">Get ready for <strong style="color:#dde">${next}</strong>.</p><button class="btn btn-p" onclick="showSec(${S.sec})">Start ${next} ➜</button></div>`;
-  document.getElementById("tclock").textContent="✓";
-  document.getElementById("unansmsg").textContent=""; goTop();
-}
-
-// ── RESULTS ───────────────────────────────────────────────────────
-function showResults(){
-  clearInterval(S.tid); S.done=true; show("scr-r");
-  const total=S.scores.reduce((a,b)=>a+b,0), pct=Math.round(total/60*100);
-  let band,bdg,tag,advice;
-  if(pct>=75){
-    band="IELTS Band 5 — Ready ✓"; bdg="bg-5";
-    tag=`Excellent work, ${S.name}! Your English is at approximately IELTS Band 5. With focused preparation over the next 6 months, reaching Band 5.5 or higher is very achievable.`;
-    advice=["Expand your <strong>academic vocabulary</strong> — learn 10 new IELTS words daily.","Practise <strong>IELTS Reading strategies</strong>: skimming, scanning, T/F/NG, and MCQ tasks.","Begin <strong>IELTS Writing Tasks 1 & 2</strong> with regular feedback from your teacher.","Review complex grammar: <strong>perfect tenses, passive voice, conditionals</strong>.","Practise <strong>IELTS Speaking Parts 1–3</strong> — record yourself and review.","Read English news and academic articles daily to build speed and comprehension.","<strong>Target:</strong> Aim for Band 5.5 or above in your IELTS exam."];
-  }else if(pct>=55){
-    band="IELTS Band 4.5 — On Track"; bdg="bg-45";
-    tag=`Good effort, ${S.name}! You are at approximately IELTS Band 4.5 — a solid foundation. Consistent study over the next 6 months can bring you to Band 5 or above.`;
-    advice=["Expand your <strong>vocabulary</strong> — learn 10 new IELTS words each day.","Review key grammar: <strong>present perfect, passive voice, and conditional sentences</strong>.","Practise <strong>IELTS Reading</strong>: True/False/Not Given, multiple choice, and matching tasks.","Build your <strong>reading speed and comprehension</strong> — aim for 250+ words per minute.","Start practising <strong>IELTS Writing Task 1 & 2</strong> at a basic level.","Use IELTS preparation books and apps at Band 4.5–5 level.","<strong>Target:</strong> Reach Band 5.0 or above in your IELTS exam."];
-  }else{
-    band="Below Band 4.5 — Needs Focus"; bdg="bg-lo";
-    tag=`Thank you for completing the test, ${S.name}. Your current level is below Band 4.5, but 6 months of focused preparation is enough time to make significant progress.`;
-    advice=["Build your <strong>core vocabulary</strong> — focus on the most common 1,500–2,000 English words.","Review basic grammar: <strong>present and past tenses, articles, and prepositions</strong>.","Read short English texts every day and practise basic comprehension.","Use IELTS preparation materials starting from Band 4 level.","Listen to English daily — <strong>BBC Learning English</strong> and graded readers are excellent.","Attend all your preparation classes and work closely with your teacher.","<strong>Target:</strong> Build a strong foundation and reach Band 4.5 by exam time."];
-  }
-  const snames=["Vocabulary","Reading","Grammar"], col=p=>p>=75?"#00e87a":p>=55?"#ffd700":"#ff6b6b";
-  const spcts=S.scores.map(s=>Math.round(s/20*100));
-  const date=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
-  document.getElementById("certarea").innerHTML=`
-  <div class="cert">
-    <p class="corg">Higher Colleges of Technology &nbsp;·&nbsp; Abu Dhabi</p>
-    <h2 class="ctitle">IELTS Placement Certificate</h2>
-    <p class="csub">This certifies that the following student has completed the IELTS English Placement Assessment</p>
-    <h3 class="cname">${S.name}</h3>
-    <p class="cdate">Date: ${date}</p>
-    <div class="cbadge ${bdg}">${band}</div>
-    <p class="ctag">${tag}</p>
-    <div class="sgrid">
-      ${snames.map((n,i)=>`<div class="sbox"><div class="sbig">${S.scores[i]}/20</div><div class="ssm">${n}<br><span style="color:${col(spcts[i])};font-weight:700">${spcts[i]}%</span></div></div>`).join("")}
-    </div>
-    <div class="stotal"><div class="sbig">${total} / 60</div><div class="ssm">Total Score &nbsp;·&nbsp; <span style="color:${col(pct)};font-weight:700">${pct}%</span></div></div>
-    <div class="advice"><h4>📋 Your Personalised 6-Month Study Plan</h4><ul>${advice.map(a=>`<li>${a}</li>`).join("")}</ul></div>
-    <p class="cfoot">Designed by: Nazila Motahari &nbsp;·&nbsp; HCT NCHR 0103 &nbsp;·&nbsp; Higher Colleges of Technology</p>
-  </div>`;
+  showScreen("scr-t");
+  renderTabs();
+  renderQs();
+  startTimer();
   goTop();
 }
 
-// ── SAVE / LOAD / RESET ───────────────────────────────────────────
+function renderTabs(){
+  var html="";
+  for(var i=0;i<SECS.length;i++){
+    var cls= i<S.sec?"stab st-done": i===S.sec?"stab st-act":"stab st-pend";
+    var mark= i<S.sec?" ✓":"";
+    html+='<div class="'+cls+'">'+SECS[i].icon+" "+SECS[i].label+mark+"</div>";
+  }
+  el("stabs").innerHTML=html;
+  el("slabel").textContent=SECS[S.sec].icon+" "+SECS[S.sec].label+(S.sec===1?" · 2 Passages":"")+" · "+(S.sec===1?"30":"20")+" min";
+  el("scount").textContent="Section "+(S.sec+1)+" of 3";
+}
+
+function renderQs(){
+  var qs=SECS[S.sec].qs;
+  var ans=S.ans[S.sec];
+  var h="";
+  if(S.sec===1){
+    h+=mkPassage("Reading Passage 1 — Technology in Education",P1,"");
+    h+='<div class="rnote">Questions 1–10 are based on Passage 1. For Questions 1–5 choose True, False, or Not Given.</div>';
+  }
+  for(var i=0;i<20;i++){
+    if(S.sec===1&&i===10){
+      h+=mkPassage("Reading Passage 2 — A Balanced Diet",P2,"margin-top:26px;");
+      h+='<div class="rnote">Questions 11–20 are based on Passage 2. For Questions 11–15 choose True, False, or Not Given.</div>';
+    }
+    h+=mkQ(i,qs[i],ans[i]);
+  }
+  el("qarea").innerHTML=h;
+  updProg();
+}
+
+function mkPassage(title,paras,style){
+  var h='<div class="passage" style="'+style+'"><h3>📖 '+title+'</h3>';
+  for(var i=0;i<paras.length;i++) h+="<p>"+paras[i]+"</p>";
+  return h+"</div>";
+}
+
+function mkQ(i,q,sel){
+  var ltrs=q.type==="tfng"?["T","F","NG"]:["A","B","C","D"];
+  var opts="";
+  for(var j=0;j<q.opts.length;j++){
+    var s=sel===j?" sel":"";
+    opts+='<div class="opt'+s+'" data-qi="'+i+'" data-oi="'+j+'"><span class="oltr">'+ltrs[j]+'</span><span>'+q.opts[j]+'</span></div>';
+  }
+  return '<div class="qcard" id="qc-'+i+'"><div class="qnum">Question '+(i+1)+' of 20</div><div class="qtext">'+q.q+'</div><div class="opts">'+opts+'</div></div>';
+}
+
+function updProg(){
+  var done=0;
+  for(var i=0;i<20;i++) if(S.ans[S.sec][i]!==null) done++;
+  el("plabel").textContent=done+" / 20 answered";
+  el("pfill").style.width=(done/20*100)+"%";
+  var left=20-done, um=el("unansmsg");
+  if(left>0){um.textContent="⚠ "+left+" question"+(left>1?"s":"")+" unanswered";um.className="unans";}
+  else{um.textContent="✅ All questions answered — ready to submit!";um.className="unans ok";}
+}
+
+// Click delegation for answer options
+el("qarea") && document.addEventListener("click",function(e){
+  var opt=e.target.closest(".opt");
+  if(!opt||!el("qarea").contains(opt)) return;
+  var qi=parseInt(opt.dataset.qi), oi=parseInt(opt.dataset.oi);
+  S.ans[S.sec][qi]=oi;
+  var card=el("qc-"+qi);
+  var allOpts=card.querySelectorAll(".opt");
+  for(var k=0;k<allOpts.length;k++) allOpts[k].classList.toggle("sel",k===oi);
+  updProg();
+  el("alertbox").classList.remove("show");
+});
+
+// ── TIMER ─────────────────────────────────────────────────────
+function startTimer(){
+  updClock();
+  S.tid=setInterval(function(){
+    S.timerSecs--;
+    updClock();
+    if(S.timerSecs<=0){clearInterval(S.tid);autoSubmit();}
+  },1000);
+}
+function updClock(){
+  var m=Math.floor(S.timerSecs/60), s=S.timerSecs%60;
+  var t=el("tclock");
+  t.textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+  t.className="tclock no-print";
+  if(S.timerSecs<=60) t.classList.add("danger");
+  else if(S.timerSecs<=300) t.classList.add("warn");
+}
+function autoSubmit(){
+  for(var i=0;i<20;i++) if(S.ans[S.sec][i]===null) S.ans[S.sec][i]=-1;
+  scoreSec();
+  toast("Time is up! Your answers were submitted automatically.");
+}
+
+// ── SUBMIT ────────────────────────────────────────────────────
+function submitSection(){
+  var left=0;
+  for(var i=0;i<20;i++) if(S.ans[S.sec][i]===null) left++;
+  if(left>0){
+    var ab=el("alertbox");
+    ab.textContent="You have "+left+" unanswered question"+(left>1?"s":"")+". Please answer all questions before submitting.";
+    ab.classList.add("show");
+    goTop(); return;
+  }
+  clearInterval(S.tid);
+  scoreSec();
+}
+
+function scoreSec(){
+  var qs=SECS[S.sec].qs, score=0;
+  for(var i=0;i<20;i++) if(S.ans[S.sec][i]===qs[i].ans) score++;
+  S.scores[S.sec]=score;
+  if(S.sec<2){S.sec++; showBetween(score);}
+  else showResults();
+}
+
+function showBetween(score){
+  var prev=SECS[S.sec-1].icon+" "+SECS[S.sec-1].label;
+  var next=SECS[S.sec].icon+" "+SECS[S.sec].label;
+  var secIdx=S.sec;
+  el("qarea").innerHTML='<div class="card bscard"><div class="icon">✅</div><h2>'+prev+' Complete!</h2><p style="margin:10px 0 8px">You scored <strong style="color:#0077aa;font-size:1.1em">'+score+' / 20</strong> in this section.</p><p style="margin-bottom:28px">Get ready for <strong>'+next+'</strong>.</p><button id="btn-next" class="btn btn-p">Start '+next+' &#x279C;</button></div>';
+  el("tclock").textContent="Done";
+  el("unansmsg").textContent="";
+  el("btn-next").addEventListener("click",function(){showSec(secIdx);});
+  goTop();
+}
+
+// ── RESULTS ───────────────────────────────────────────────────
+function showResults(){
+  clearInterval(S.tid); S.done=true;
+  showScreen("scr-r");
+  var total=S.scores[0]+S.scores[1]+S.scores[2];
+  var pct=Math.round(total/60*100);
+  var band,bdg,tag,advice;
+  if(pct>=75){
+    band="IELTS Band 5 — Ready"; bdg="bg-5";
+    tag="Excellent work, "+S.name+"! Your English is at approximately IELTS Band 5. With focused preparation over the next 6 months, reaching Band 5.5 or higher is very achievable.";
+    advice=["Expand your <strong>academic vocabulary</strong> — learn 10 new IELTS words daily.","Practise <strong>IELTS Reading strategies</strong>: skimming, scanning, True/False/Not Given.","Begin <strong>IELTS Writing Tasks 1 and 2</strong> with regular feedback from your teacher.","Review complex grammar: <strong>perfect tenses, passive voice, conditionals</strong>.","Practise <strong>IELTS Speaking Parts 1–3</strong> — record yourself and review.","Read English news and academic articles daily to build speed and comprehension.","<strong>Target:</strong> Aim for Band 5.5 or above in your IELTS exam."];
+  } else if(pct>=55){
+    band="IELTS Band 4.5 — On Track"; bdg="bg-45";
+    tag="Good effort, "+S.name+"! You are at approximately IELTS Band 4.5. Consistent study over 6 months can bring you to Band 5 or above.";
+    advice=["Expand your <strong>vocabulary</strong> — learn 10 new IELTS words each day.","Review key grammar: <strong>present perfect, passive voice, and conditional sentences</strong>.","Practise <strong>IELTS Reading</strong>: True/False/Not Given, multiple choice, and matching tasks.","Build your <strong>reading speed and comprehension</strong> — aim for 250+ words per minute.","Start practising <strong>IELTS Writing Task 1 and 2</strong> at a basic level.","Use IELTS preparation books and apps at Band 4.5–5 level.","<strong>Target:</strong> Reach Band 5.0 or above in your IELTS exam."];
+  } else {
+    band="Below Band 4.5 — Needs Focus"; bdg="bg-lo";
+    tag="Thank you for completing the test, "+S.name+". Your current level is below Band 4.5, but 6 months of focused preparation is enough time to make significant progress.";
+    advice=["Build your <strong>core vocabulary</strong> — focus on the most common 1,500–2,000 English words.","Review basic grammar: <strong>present and past tenses, articles, and prepositions</strong>.","Read short English texts every day and practise basic comprehension.","Use IELTS preparation materials starting from Band 4 level.","Listen to English daily — <strong>BBC Learning English</strong> is an excellent free resource.","Attend all your preparation classes and work closely with your teacher.","<strong>Target:</strong> Build a strong foundation and reach Band 4.5 by exam time."];
+  }
+  var snames=["Vocabulary","Reading","Grammar"];
+  var col=function(p){return p>=75?"#007a3d":p>=55?"#c87800":"#cc2200";};
+  var spcts=S.scores.map(function(s){return Math.round(s/20*100);});
+  var date=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+  var sboxes="";
+  for(var i=0;i<3;i++) sboxes+='<div class="sbox"><div class="sbig">'+S.scores[i]+'/20</div><div class="ssm">'+snames[i]+'<br><span style="color:'+col(spcts[i])+';font-weight:700">'+spcts[i]+'%</span></div></div>';
+  var alist=""; for(var j=0;j<advice.length;j++) alist+="<li>"+advice[j]+"</li>";
+  el("certarea").innerHTML='<div class="cert"><p class="corg">Higher Colleges of Technology &nbsp;·&nbsp; Abu Dhabi</p><h2 class="ctitle">IELTS Placement Certificate</h2><p class="csub">This certifies that the following student completed the IELTS Placement Assessment</p><h3 class="cname">'+S.name+'</h3><p class="cdate">HCT NCHR 0103 &nbsp;·&nbsp; Date: '+date+'</p><div class="cbadge '+bdg+'">'+band+'</div><p class="ctag">'+tag+'</p><div class="sgrid">'+sboxes+'</div><div class="stotal"><div class="sbig">'+total+' / 60</div><div class="ssm">Total Score &nbsp;·&nbsp; <span style="color:'+col(pct)+';font-weight:700">'+pct+'%</span></div></div><div class="advice"><h4>📋 Your Personalised 6-Month Study Plan</h4><ul>'+alist+'</ul></div><p class="cfoot">Designed by: Nazila Motahari &nbsp;·&nbsp; HCT NCHR 0103 &nbsp;·&nbsp; Higher Colleges of Technology</p></div>';
+  goTop();
+}
+
+// ── SAVE / LOAD / RESET ───────────────────────────────────────
 function saveProgress(){
-  const d={name:S.name,sec:S.sec,ans:S.ans,scores:S.scores,timerSecs:S.timerSecs,done:S.done,ts:new Date().toISOString()};
-  const a=document.createElement("a");
+  var d={name:S.name,sec:S.sec,ans:S.ans,scores:S.scores,timerSecs:S.timerSecs,done:S.done,ts:new Date().toISOString()};
+  var a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([JSON.stringify(d)],{type:"application/json"}));
-  a.download=`ielts_${S.name.replace(/\s+/g,"_")}.json`; a.click();
-  toast("💾 Progress saved!");
+  a.download="ielts_"+S.name.replace(/\s+/g,"_")+".json"; a.click();
+  toast("Progress saved!");
 }
+
 function loadProgress(){
-  const inp=document.createElement("input"); inp.type="file"; inp.accept=".json";
-  inp.onchange=e=>{
-    const f=e.target.files[0]; if(!f)return;
-    const r=new FileReader();
-    r.onload=ev=>{
+  var inp=document.createElement("input"); inp.type="file"; inp.accept=".json";
+  inp.onchange=function(e){
+    var f=e.target.files[0]; if(!f) return;
+    var r=new FileReader();
+    r.onload=function(ev){
       try{
-        const d=JSON.parse(ev.target.result);
-        S.name=d.name;S.sec=d.sec;S.ans=d.ans;S.scores=d.scores;S.timerSecs=d.timerSecs;S.done=d.done;
-        document.getElementById("inp-name").value=d.name;
-        wMsg(`✅ Progress loaded for ${d.name}. Saved: ${new Date(d.ts).toLocaleString()}`,true);
-        if(d.done||d.scores.every(s=>s!==null)){showResults();}
-        else{showSec(d.sec,d.timerSecs);}
-      }catch{wMsg("❌ Invalid file — please use a saved .json progress file.");}
-    };r.readAsText(f);
-  };inp.click();
+        var d=JSON.parse(ev.target.result);
+        S.name=d.name; S.sec=d.sec; S.ans=d.ans; S.scores=d.scores; S.timerSecs=d.timerSecs; S.done=d.done;
+        el("inp-name").value=d.name;
+        setMsg("Progress loaded for "+d.name+". Saved: "+new Date(d.ts).toLocaleString(), true);
+        if(d.done||d.scores.every(function(s){return s!==null;})) showResults();
+        else showSec(d.sec, d.timerSecs);
+      }catch(err){setMsg("Invalid file — please use a saved .json progress file.");}
+    };
+    r.readAsText(f);
+  };
+  inp.click();
 }
+
 function confirmReset(){
-  if(!confirm("Reset the test? All current progress will be lost."))return;
+  if(!confirm("Reset the test? All progress will be lost.")) return;
   clearInterval(S.tid);
   S={name:"",sec:0,ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],scores:[null,null,null],timerSecs:0,tid:null,done:false};
-  show("scr-w");
-  document.getElementById("inp-name").value="";
-  document.getElementById("wmsg").textContent=""; goTop();
+  showScreen("scr-w");
+  el("inp-name").value=""; el("wmsg").textContent=""; goTop();
 }
-function toast(msg){
-  const t=document.createElement("div"); t.className="toast no-print"; t.textContent=msg;
-  document.body.appendChild(t); setTimeout(()=>t.remove(),3000);
-}
+
+// ── EVENT LISTENERS ───────────────────────────────────────────
+el("btn-start").addEventListener("click", startTest);
+el("btn-load").addEventListener("click", loadProgress);
+el("inp-name").addEventListener("keydown", function(e){if(e.key==="Enter") startTest();});
+el("btn-save").addEventListener("click", saveProgress);
+el("btn-reset").addEventListener("click", confirmReset);
+el("btn-submit").addEventListener("click", submitSection);
+el("btn-print").addEventListener("click", function(){window.print();});
+el("btn-newtest").addEventListener("click", confirmReset);
+el("btn-top").addEventListener("click", goTop);
 </script>
 </body>
 </html>
