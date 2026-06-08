@@ -9,23 +9,19 @@
 body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#fdf8f2,#fef3e2 50%,#fdf0e0);min-height:100vh;color:#2d2d2d}
 .wrap{max-width:880px;margin:0 auto;padding:20px 16px 60px}
 .card{background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:18px;padding:28px;margin-bottom:20px;box-shadow:0 3px 14px rgba(0,0,0,.07)}
-/* BUTTONS */
 .btn{display:inline-flex;align-items:center;gap:6px;padding:11px 26px;border-radius:50px;border:none;cursor:pointer;font-size:.95em;font-weight:600;transition:all .22s;white-space:nowrap}
 .btn-p{background:linear-gradient(90deg,#0099cc,#6644cc);color:#fff}
 .btn-p:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,153,204,.3)}
 .btn-s{background:#f0f0f0;color:#444;border:1px solid #ddd}
 .btn-s:hover{background:#e5e5e5}
 .btn-d{background:rgba(200,0,0,.07);color:#cc2200;border:1px solid rgba(200,0,0,.2)}
-/* HERO */
 .hero{text-align:center;padding:36px 20px 16px}
 .hero h1{font-size:2em;background:linear-gradient(90deg,#0099cc,#6644cc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
 .hero .sub{color:#888;font-size:.93em;margin-bottom:4px}
 .hero .course{font-size:.85em;color:#aaa;font-weight:600;letter-spacing:.5px}
-/* INFO GRID */
 .ig{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
 .ib{background:#fafafa;border:1px solid #eee;border-radius:12px;padding:15px 10px;text-align:center}
 .ii{font-size:1.6em;margin-bottom:5px}.il{font-size:.75em;color:#888}.iv{font-size:.9em;font-weight:600;color:#333;margin-top:3px}
-/* SECTION ROW */
 .sr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
 .sb{border-radius:12px;padding:14px;text-align:center}
 .sb-v{background:rgba(0,153,204,.07);border:1px solid rgba(0,153,204,.2)}
@@ -34,18 +30,14 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135d
 .sn{font-weight:700;font-size:.88em;margin-bottom:4px}
 .sn-v{color:#0077aa}.sn-r{color:#6644cc}.sn-g{color:#c87800}
 .sd{font-size:.78em;color:#888}
-/* INSTRUCTIONS */
 .instr{background:#fffbee;border:1px solid #e8d870;border-radius:12px;padding:16px 20px;margin-bottom:20px}
 .instr h4{color:#9a7200;margin-bottom:9px;font-size:.88em}
 .instr ul{padding-left:18px;color:#555;font-size:.86em;line-height:2.1}
-/* NAME INPUT */
 .nlabel{font-size:.88em;color:#555;display:block;margin-bottom:7px;font-weight:600}
 #inp-name{width:100%;padding:12px 16px;background:#fff;border:2px solid #ddd;border-radius:10px;color:#222;font-size:1em;transition:border-color .2s;margin-bottom:18px;outline:none}
 #inp-name:focus{border-color:#0099cc}
 #inp-name.err{border-color:#cc2200}
 .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-#wmsg{font-size:.85em;min-height:20px}
-/* TEST SCREEN */
 .stabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
 .stab{padding:7px 15px;border-radius:20px;font-size:.8em;font-weight:600}
 .st-done{background:rgba(0,140,70,.1);color:#007a3d;border:1px solid rgba(0,140,70,.25)}
@@ -60,7 +52,6 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135d
 .pf{height:100%;background:linear-gradient(90deg,#0099cc,#6644cc);border-radius:4px;transition:width .3s}
 .alertbox{background:#fff3f3;border:1px solid #ffcccc;border-radius:8px;padding:10px 15px;color:#cc2200;font-size:.86em;margin-bottom:14px;display:none}
 .alertbox.show{display:block}
-/* QUESTIONS */
 .qcard{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:20px;margin-bottom:13px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
 .qnum{font-size:.73em;color:#6644cc;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
 .qtext{font-size:1em;color:#222;line-height:1.65;margin-bottom:13px}
@@ -70,20 +61,20 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135d
 .opt.sel{background:rgba(102,68,204,.1);border-color:#6644cc;color:#3a1a99}
 .oltr{width:27px;height:27px;border-radius:50%;background:#eee;display:flex;align-items:center;justify-content:center;font-size:.78em;font-weight:700;flex-shrink:0;transition:background .17s}
 .opt.sel .oltr{background:#6644cc;color:#fff}
-/* READING */
-.passage{background:#f9f6f0;border-left:3px solid #0099cc;border-radius:10px;padding:20px 22px;margin-bottom:16px;line-height:1.85;font-size:.91em;color:#444}
-.passage h3{color:#0077aa;font-size:.97em;margin-bottom:11px;font-weight:700}
-.passage p{margin-bottom:9px}.passage p:last-child{margin-bottom:0}
+.passage{background:#f9f6f0;border-left:3px solid #0099cc;border-radius:10px;padding:20px 22px;margin-bottom:16px;line-height:1.85;font-size:.91em;color:#333}
+.passage h3{color:#0077aa;font-size:.97em;margin-bottom:14px;font-weight:700}
+.passage p{margin-bottom:10px}.passage p:last-child{margin-bottom:0}
+.plbl{font-weight:800;color:#0077aa;margin-right:6px}
 .rnote{font-size:.83em;color:#6644cc;font-weight:600;margin-bottom:13px;padding:7px 13px;background:rgba(102,68,204,.07);border-radius:8px}
-/* BETWEEN */
+.ginstr{background:#eef5fb;border:1px solid #b8d4e8;border-left:4px solid #0099cc;border-radius:10px;padding:14px 18px;margin:18px 0 12px;font-size:.86em;color:#1a4a6a;line-height:1.9}
+.ginstr strong{display:block;font-size:.95em;color:#005580;margin-bottom:5px;letter-spacing:.3px;text-transform:uppercase}
+.ginstr .hlist{background:#fff;border:1px solid #cce0ee;border-radius:8px;padding:10px 14px;margin-top:8px;font-size:.97em;line-height:2}
 .bscard{text-align:center;padding:50px 24px}
 .bscard .icon{font-size:3.5em;margin-bottom:13px}
 .bscard h2{font-size:1.55em;color:#007a3d;margin-bottom:8px}
 .bscard p{color:#666;line-height:1.75}
-/* NAV */
 .nav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;flex-wrap:wrap;gap:10px}
 .unans{font-size:.85em;color:#cc3300}.unans.ok{color:#007a3d}
-/* CERTIFICATE */
 .cert{background:linear-gradient(135deg,#fffdf8,#fff9f0);border:2px solid rgba(0,140,200,.35);border-radius:22px;padding:40px 36px;text-align:center}
 .corg{font-size:.78em;color:#aaa;text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}
 .ctitle{font-size:1.45em;color:#222;font-weight:700;margin-bottom:4px}
@@ -104,7 +95,6 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135d
 .advice h4{color:#0077aa;margin-bottom:11px;font-size:.92em}
 .advice ul{padding-left:18px;line-height:2.15;color:#444;font-size:.87em}
 .cfoot{color:#bbb;font-size:.76em;margin-top:20px}
-/* UTILS */
 .toast{position:fixed;bottom:68px;right:18px;background:#efffec;border:1px solid #b2e8b2;color:#2a7a2a;padding:10px 18px;border-radius:10px;font-size:.86em;z-index:9999;animation:fiu .3s;box-shadow:0 2px 10px rgba(0,0,0,.1)}
 @keyframes fiu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .scrollbtn{position:fixed;bottom:18px;right:18px;width:40px;height:40px;border-radius:50%;background:rgba(0,140,200,.15);border:1px solid rgba(0,140,200,.3);color:#0077aa;cursor:pointer;font-size:1.1em;display:flex;align-items:center;justify-content:center}
@@ -201,7 +191,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135d
 <button class="scrollbtn no-print" id="btn-top">↑</button>
 
 <script>
-// ── DATA ────────────────────────────────────────────────────────
+// ── VOCABULARY DATA ────────────────────────────────────────────
 const QV=[
   {q:"The government plans to ___ new laws to protect the environment.",opts:["invite","introduce","include","increase"],ans:1},
   {q:"The company's annual ___ showed a 20% rise in sales last year.",opts:["stories","subjects","statistics","sections"],ans:2},
@@ -224,41 +214,114 @@ const QV=[
   {q:"The new policy will ___ all employees, regardless of their position.",opts:["effect","infect","affect","reflect"],ans:2},
   {q:"The book provides a ___ overview of modern history.",opts:["competitive","comparative","complicated","comprehensive"],ans:3}
 ];
+
+// ── READING DATA ────────────────────────────────────────────────
+// Passage 1: labeled paragraphs (A–E)
 const P1=[
-  "The use of technology in education has changed dramatically over the past two decades. In the past, students relied mainly on textbooks and face-to-face teaching. Today, however, digital tools such as tablets, laptops, and online learning platforms have become an essential part of many classrooms around the world.",
-  "Supporters of educational technology argue that it makes learning more engaging and accessible. Students can access a wide range of resources online, study at their own pace, and receive immediate feedback on their work. Research has also shown that interactive software can help students understand difficult concepts more easily.",
-  "However, not everyone agrees that technology always improves learning. Some teachers believe that too much screen time can reduce concentration and limit social interaction among students. There are also concerns about unequal access to technology, as not all students have reliable internet connections or modern devices at home.",
-  "Despite these concerns, most education experts agree that technology is now an unavoidable part of modern education. The key is to use it thoughtfully. Teachers need training to use digital tools effectively, and schools must ensure that all students have fair access to technology. When used correctly, technology has the potential to transform education and prepare students for the demands of the 21st century."
+  {lbl:"A",txt:"Research suggests that the colours used in workplace environments can significantly affect employee mood, productivity, and overall wellbeing. While many businesses focus on practical factors such as lighting and furniture, colour psychology is increasingly recognised as a key element of office design."},
+  {lbl:"B",txt:"Blue is the most commonly used colour in corporate environments, primarily because of its associations with calm, focus, and reliability. Studies have found that workers in blue-painted offices show higher productivity on tasks requiring sustained concentration, such as data analysis or extended writing. Some psychologists, however, caution that excessive use of blue can feel cold and impersonal, and may reduce motivation over longer periods."},
+  {lbl:"C",txt:"Red produces quite different effects. It stimulates the nervous system and raises the heart rate, which can be advantageous in environments demanding physical energy or rapid decision-making. However, research indicates that red workspaces can impair performance on tasks requiring careful, detailed thinking. A 2009 study at the University of British Columbia found that participants working in red environments performed significantly worse on complex cognitive tests than those in blue or neutral settings."},
+  {lbl:"D",txt:"Green is perhaps the most versatile choice for workplace environments. Its cultural and psychological associations with nature and growth tend to reduce stress levels without inducing drowsiness. Employers seeking to encourage both creativity and sustained focus are increasingly incorporating green elements and biophilic design features, such as living plant walls and natural materials."},
+  {lbl:"E",txt:"Despite this evidence, experts warn that colour responses are far from universal. Cultural background, personal experience, lighting conditions, and even the specific shade or saturation of a colour all influence how individuals react. What increases one person's productivity may have the opposite effect on a colleague."}
 ];
+
+// Passage 2: plain paragraphs
 const P2=[
-  "A balanced diet is essential for maintaining good health. Nutritionists recommend eating a variety of foods from different food groups, including fruits, vegetables, grains, proteins, and dairy products. Each food group provides different nutrients that the body needs to function properly.",
-  "One of the most important aspects of a healthy diet is eating enough vegetables and fruits. These foods are rich in vitamins, minerals, and fibre, which help protect the body against diseases such as heart disease and diabetes. Health experts recommend eating at least five portions of fruit and vegetables every day.",
-  "Unfortunately, many people around the world do not follow a balanced diet. Instead, they consume large amounts of processed foods, which are often high in sugar, salt, and fat. These foods are convenient and affordable, but regular consumption can lead to serious health problems, including obesity, high blood pressure, and tooth decay.",
-  "Improving eating habits does not have to be difficult. Small changes, such as replacing sugary snacks with fruit or choosing whole grain bread instead of white bread, can make a significant difference over time. Cooking meals at home using fresh ingredients is also an effective way to control what you eat.",
-  "Education is also a key factor in promoting healthy eating. When people understand the connection between diet and health, they are more likely to make better food choices. Schools and workplaces can play an important role by providing information about nutrition and offering healthier food options."
+  "Sleep deprivation has become a widespread experience among college and university students, with surveys consistently finding that large numbers sleep fewer than the recommended seven to nine hours per night. Many students regard poor sleep as simply an unavoidable feature of academic life, yet researchers argue this assumption may be actively working against them.",
+  "A study conducted at the University of St. Thomas in 2019 examined the sleep habits of over 1,000 undergraduate students and found a statistically significant correlation between sleep duration and academic performance. Students who consistently slept fewer than six hours each night recorded an average GPA 0.4 points lower than peers who slept seven hours or more. Notably, students who attempted to recover by sleeping longer at weekends showed only marginal improvements, leading researchers to conclude that irregular sleep patterns may be nearly as harmful as consistent sleep loss.",
+  "The underlying mechanism involves the brain's memory consolidation process. During deep sleep, the hippocampus — a region associated with learning and memory — transfers newly acquired information into long-term storage. Without adequate sleep, this transfer remains incomplete. Students who study late into the night before an exam may therefore retain less than they expect, regardless of the hours spent reviewing material.",
+  "Sleep deprivation also affects students beyond academic performance. Reduced sleep is linked to increased anxiety, irritability, and difficulty sustaining concentration — all of which further compound academic difficulties. A 2021 review published in Sleep Medicine Reviews reported that students experiencing chronic sleep difficulties were 2.5 times more likely to describe themselves as academically disengaged.",
+  "Addressing sleep deprivation requires action at both individual and institutional levels. Some universities have begun reviewing scheduling practices, including the timing of early morning lectures. Meanwhile, researchers recommend that students adopt consistent sleep schedules and limit screen exposure in the hour before bedtime, as the blue light emitted by devices is known to interfere with the body's natural sleep signals."
 ];
+
 const QR=[
-  {p:1,type:"tfng",q:"Students in the past mainly used digital devices for learning.",opts:["True","False","Not Given"],ans:1},
-  {p:1,type:"tfng",q:"Technology can make learning more engaging and accessible.",opts:["True","False","Not Given"],ans:0},
-  {p:1,type:"tfng",q:"Research shows that interactive software helps students understand difficult topics.",opts:["True","False","Not Given"],ans:0},
-  {p:1,type:"tfng",q:"Some teachers worry that too much screen time reduces concentration.",opts:["True","False","Not Given"],ans:0},
-  {p:1,type:"tfng",q:"Most education experts want to remove technology from schools.",opts:["True","False","Not Given"],ans:1},
-  {p:1,type:"mcq",q:"According to the text, what have digital tools become in many classrooms?",opts:["Optional","Expensive","Essential","Outdated"],ans:2},
-  {p:1,type:"mcq",q:"What benefit does online learning offer to students?",opts:["Study only with a teacher","Access a wide range of resources","Avoid all feedback","Work only in groups"],ans:1},
-  {p:1,type:"mcq",q:"According to some teachers, what is a negative effect of technology?",opts:["It is too expensive","It can reduce concentration","It is too hard to learn","It fully replaces teachers"],ans:1},
-  {p:1,type:"mcq",q:"What do most education experts say about technology in schools?",opts:["It should be banned","It must be used thoughtfully","It is always helpful","It has no real benefits"],ans:1},
-  {p:1,type:"mcq",q:"What do teachers need in order to use digital tools effectively?",opts:["More devices","Faster internet","Training","Larger classrooms"],ans:2},
-  {p:2,type:"tfng",q:"Nutritionists recommend eating foods from only one food group.",opts:["True","False","Not Given"],ans:1},
-  {p:2,type:"tfng",q:"Fruits and vegetables can help protect against heart disease and diabetes.",opts:["True","False","Not Given"],ans:0},
-  {p:2,type:"tfng",q:"Processed foods are always more expensive than fresh foods.",opts:["True","False","Not Given"],ans:2},
-  {p:2,type:"tfng",q:"Cooking at home with fresh ingredients can help people control their diet.",opts:["True","False","Not Given"],ans:0},
-  {p:2,type:"tfng",q:"All schools currently provide nutrition information to their students.",opts:["True","False","Not Given"],ans:2},
-  {p:2,type:"mcq",q:"According to nutritionists, what should a healthy diet include?",opts:["Only proteins and grains","A variety of foods from different groups","Mainly dairy products","Only fruits and vegetables"],ans:1},
-  {p:2,type:"mcq",q:"How many portions of fruit and vegetables do health experts recommend daily?",opts:["At least three","At least four","At least five","At least six"],ans:2},
-  {p:2,type:"mcq",q:"Which health problem can result from regularly eating processed foods?",opts:["Better concentration","Stronger bones","Obesity and high blood pressure","Improved energy levels"],ans:2},
-  {p:2,type:"mcq",q:"What simple change is suggested to improve a person's diet?",opts:["Eating more salt","Avoiding all grains","Replacing sugary snacks with fruit","Drinking less water"],ans:2},
-  {p:2,type:"mcq",q:"Why is education important for promoting healthy eating?",opts:["It makes food cheaper","It helps people understand the diet-health connection","It removes the need for cooking","It provides free meals"],ans:1}
+  // ── PASSAGE 1 ─────────────────────────────────────────────────
+  // GROUP 1: Matching Headings (Q1–3)
+  {p:1,gi:1,
+   ginstr:{title:"MATCHING HEADINGS — Questions 1–3",
+           body:"Choose the correct heading for Paragraphs B, C and D from the list of headings below. There are more headings than paragraphs, so you will not use all of them.",
+           hlist:["i.&nbsp; The role of focus and reliability in a popular colour choice","ii.&nbsp; A colour associated with stimulation but with drawbacks for detailed work","iii.&nbsp; How natural associations make one colour particularly adaptable","iv.&nbsp; Why colour responses cannot be predicted for every individual","v.&nbsp; Consistent advantages of one colour across all workplace settings","vi.&nbsp; The history of colour theory in interior architecture"]},
+   type:"heading",q:"Which heading from the list best fits <strong>Paragraph B</strong>?",
+   opts:["ii — stimulation but drawbacks for detailed work","iii — natural associations and adaptability","v — consistent advantages across all workplace settings","i — focus and reliability in a popular colour choice"],ans:3},
+  {p:1,gi:1,ginstr:null,
+   type:"heading",q:"Which heading from the list best fits <strong>Paragraph C</strong>?",
+   opts:["i — focus and reliability in a popular colour choice","ii — stimulation but drawbacks for detailed work","iv — colour responses cannot be predicted for everyone","vi — history of colour theory in interior architecture"],ans:1},
+  {p:1,gi:1,ginstr:null,
+   type:"heading",q:"Which heading from the list best fits <strong>Paragraph D</strong>?",
+   opts:["i — focus and reliability in a popular colour choice","ii — stimulation but drawbacks for detailed work","iii — natural associations and adaptability","iv — colour responses cannot be predicted for everyone"],ans:2},
+
+  // GROUP 2: True / False / Not Given (Q4–6)
+  {p:1,gi:2,
+   ginstr:{title:"TRUE / FALSE / NOT GIVEN — Questions 4–6",
+           body:"Do the following statements agree with the information in the passage?<br><strong>TRUE</strong> — the statement agrees with the passage &nbsp;|&nbsp; <strong>FALSE</strong> — the statement contradicts the passage &nbsp;|&nbsp; <strong>NOT GIVEN</strong> — the information is not in the passage"},
+   type:"tfng",q:"Research has established that red has no beneficial role in any type of workplace.",
+   opts:["True","False","Not Given"],ans:1},
+  {p:1,gi:2,ginstr:null,
+   type:"tfng",q:"The University of British Columbia study compared red environments only with neutral-coloured settings.",
+   opts:["True","False","Not Given"],ans:1},
+  {p:1,gi:2,ginstr:null,
+   type:"tfng",q:"The specific shade or level of saturation of a colour can influence how a person reacts to it.",
+   opts:["True","False","Not Given"],ans:0},
+
+  // GROUP 3: Multiple Choice (Q7–10)
+  {p:1,gi:3,
+   ginstr:{title:"MULTIPLE CHOICE — Questions 7–10",body:"Choose the correct answer, A, B, C or D."},
+   type:"mcq",q:"According to Paragraph B, why do some psychologists express concern about extensive use of blue in offices?",
+   opts:["It has been linked to increased stress among workers","Long-term exposure may gradually reduce employee motivation","It is associated with low morale and feelings of sadness","It creates physical discomfort in some individuals"],ans:1},
+  {p:1,gi:3,ginstr:null,
+   type:"mcq",q:"The word <em>impair</em> in Paragraph C is closest in meaning to:",
+   opts:["strengthen","delay","damage","challenge"],ans:2},
+  {p:1,gi:3,ginstr:null,
+   type:"mcq",q:"What does the growing use of green in workplaces suggest, according to the passage?",
+   opts:["It is the only colour scientifically proven to enhance both memory and creativity","Employers value it because it can support more than one workplace goal simultaneously","Organisations prefer it primarily because it is more affordable than other colour options","It is most effective when it is used in combination with blue or neutral tones"],ans:1},
+  {p:1,gi:3,ginstr:null,
+   type:"mcq",q:"What is the main function of Paragraph E in the passage?",
+   opts:["To argue that all colour psychology research lacks scientific validity","To recommend that employers consult workers before redesigning offices","To explain that the effect of colour is not the same for every person","To call for further research into cultural differences in colour perception"],ans:2},
+
+  // ── PASSAGE 2 ─────────────────────────────────────────────────
+  // GROUP 4: Summary Completion (Q11–13)
+  {p:2,gi:4,
+   ginstr:{title:"SUMMARY COMPLETION — Questions 11–13",
+           body:"Complete the summary of paragraphs one and two. Choose the best answer, A, B, C or D, for each gap. Your answer must reflect the meaning of the passage."},
+   type:"summary",q:"Q11 — 'The 2019 study found that students who slept fewer than six hours had a ___ GPA than peers who slept seven hours or more.'",
+   opts:["A — higher","B — lower","C — similar","D — unpredictable"],ans:1},
+  {p:2,gi:4,ginstr:null,
+   type:"summary",q:"Q12 — 'Students who tried to compensate for lost sleep by sleeping longer at ___ saw only small gains in performance.'",
+   opts:["A — weekdays","B — lunchtime","C — weekends","D — early mornings"],ans:2},
+  {p:2,gi:4,ginstr:null,
+   type:"summary",q:"Q13 — 'Researchers concluded that an ___ sleep pattern may be almost as damaging as consistently poor sleep.'",
+   opts:["A — extended","B — shortened","C — regular","D — irregular"],ans:3},
+
+  // GROUP 5: Matching Sentence Endings (Q14–16)
+  {p:2,gi:5,
+   ginstr:{title:"MATCHING SENTENCE ENDINGS — Questions 14–16",
+           body:"Complete each sentence with the correct ending, A–D, from the options provided. Each ending may only be used once."},
+   type:"match",q:"Q14 — 'During deep sleep, the hippocampus...'",
+   opts:["A — ...regulates the brain's response to anxiety and stress","B — ...moves recently learned information into long-term memory storage","C — ...produces chemicals that help students remain alert during revision","D — ...reduces brain activity so that the body can physically recover"],ans:1},
+  {p:2,gi:5,ginstr:null,
+   type:"match",q:"Q15 — 'Students who revise late into the night before an exam...'",
+   opts:["A — ...tend to outperform students who sleep early","B — ...usually succeed if they cover enough material","C — ...may remember less than expected despite hours of reviewing","D — ...risk developing lasting damage to their long-term memory"],ans:2},
+  {p:2,gi:5,ginstr:null,
+   type:"match",q:"Q16 — 'According to the 2021 review, students with ongoing sleep difficulties were...'",
+   opts:["A — ...twice as likely to record below-average exam scores","B — ...2.5 times more likely to report feeling disengaged from their studies","C — ...significantly more likely to withdraw from their degree programmes","D — ...at considerably higher risk of developing clinical anxiety disorders"],ans:1},
+
+  // GROUP 6: Multiple Choice (Q17–20)
+  {p:2,gi:6,
+   ginstr:{title:"MULTIPLE CHOICE — Questions 17–20",body:"Choose the correct answer, A, B, C or D."},
+   type:"mcq",q:"According to the passage, what is the main reason many students experience sleep deprivation?",
+   opts:["They choose to spend evenings on entertainment and social media","They regard insufficient sleep as a normal and unavoidable part of student life","Universities schedule too many compulsory lectures in the early morning","They are simply unaware that sleep deprivation can affect academic results"],ans:1},
+  {p:2,gi:6,ginstr:null,
+   type:"mcq",q:"According to the passage, what limits the effectiveness of late-night revision before an exam?",
+   opts:["Students find it harder to concentrate during evening hours","Sleep is required for the brain to complete the process of storing new information","Reviewing material too rapidly prevents genuine understanding from developing","High stress levels late at night interfere with a student's ability to absorb new ideas"],ans:1},
+  {p:2,gi:6,ginstr:null,
+   type:"mcq",q:"Which of the following effects of sleep deprivation on students is mentioned in the passage?",
+   opts:["A reduced ability to maintain relationships with other students","An increased likelihood of arriving late or missing morning lectures","Greater difficulty in sustaining attention and concentration","A decreasing interest in taking on academically demanding subjects"],ans:2},
+  {p:2,gi:6,ginstr:null,
+   type:"mcq",q:"Which statement best reflects the passage's position on how to address student sleep deprivation?",
+   opts:["The problem is primarily the responsibility of universities to resolve","Individual students alone must take ownership of their sleep patterns","Both students and their institutions have a role to play in finding solutions","Insufficient evidence currently exists to make firm recommendations"],ans:2}
 ];
+
+// ── GRAMMAR DATA ────────────────────────────────────────────────
 const QG=[
   {q:"She ___ in this company for five years.",opts:["works","is working","has worked","worked"],ans:2},
   {q:"The report ___ by the manager yesterday.",opts:["wrote","was written","has written","is writing"],ans:1},
@@ -281,93 +344,67 @@ const QG=[
   {q:"How long ___ you been waiting here?",opts:["did","do","have","are"],ans:2},
   {q:"If it ___ tomorrow, the match will be cancelled.",opts:["rains","will rain","rained","would rain"],ans:0}
 ];
+
 const SECS=[
   {id:"vocab",  label:"Vocabulary", icon:"📗", qs:QV, secs:1200},
   {id:"reading",label:"Reading",    icon:"📖", qs:QR, secs:1800},
   {id:"grammar",label:"Grammar",   icon:"✏️", qs:QG, secs:1200}
 ];
 
-// ── STATE ─────────────────────────────────────────────────────
-let S={
-  name:"", sec:0,
-  ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],
-  scores:[null,null,null], timerSecs:0, tid:null, done:false
-};
+// ── STATE ──────────────────────────────────────────────────────
+var S={name:"",sec:0,ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],scores:[null,null,null],timerSecs:0,tid:null,done:false};
 
-// ── HELPERS ───────────────────────────────────────────────────
 function el(id){return document.getElementById(id);}
-function showScreen(id){
-  el("scr-w").style.display = id==="scr-w" ? "block" : "none";
-  el("scr-t").style.display = id==="scr-t" ? "block" : "none";
-  el("scr-r").style.display = id==="scr-r" ? "block" : "none";
-}
+function showScreen(id){el("scr-w").style.display=id==="scr-w"?"block":"none";el("scr-t").style.display=id==="scr-t"?"block":"none";el("scr-r").style.display=id==="scr-r"?"block":"none";}
 function goTop(){window.scrollTo(0,0);}
-function toast(msg){
-  var t=document.createElement("div"); t.className="toast no-print"; t.textContent=msg;
-  document.body.appendChild(t); setTimeout(function(){t.remove();},3000);
-}
+function toast(msg){var t=document.createElement("div");t.className="toast no-print";t.textContent=msg;document.body.appendChild(t);setTimeout(function(){t.remove();},3000);}
+function setMsg(m,ok){el("wmsg").textContent=m;el("wmsg").style.color=ok?"#007a3d":"#cc2200";}
 
-// ── WELCOME ───────────────────────────────────────────────────
-function setMsg(m, ok){
-  el("wmsg").textContent=m;
-  el("wmsg").style.color=ok?"#007a3d":"#cc2200";
-}
-
+// ── WELCOME ────────────────────────────────────────────────────
 function startTest(){
   var n=el("inp-name").value.trim();
-  if(!n){
-    el("inp-name").classList.add("err");
-    setMsg("Please enter your name to begin.");
-    return;
-  }
-  el("inp-name").classList.remove("err");
-  setMsg("","");
-  S={
-    name:n, sec:0,
-    ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],
-    scores:[null,null,null], timerSecs:0, tid:null, done:false
-  };
+  if(!n){el("inp-name").classList.add("err");setMsg("Please enter your name to begin.");return;}
+  el("inp-name").classList.remove("err");setMsg("");
+  S={name:n,sec:0,ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],scores:[null,null,null],timerSecs:0,tid:null,done:false};
   showSec(0);
 }
 
-// ── SECTION ───────────────────────────────────────────────────
-function showSec(idx, resumeSecs){
+// ── SECTION DISPLAY ────────────────────────────────────────────
+function showSec(idx,resumeSecs){
   S.sec=idx;
   S.timerSecs=(resumeSecs!==undefined)?resumeSecs:SECS[idx].secs;
   clearInterval(S.tid);
   showScreen("scr-t");
-  renderTabs();
-  renderQs();
-  startTimer();
-  goTop();
+  renderTabs(); renderQs(); startTimer(); goTop();
 }
 
 function renderTabs(){
-  var html="";
+  var h="";
   for(var i=0;i<SECS.length;i++){
-    var cls= i<S.sec?"stab st-done": i===S.sec?"stab st-act":"stab st-pend";
-    var mark= i<S.sec?" ✓":"";
-    html+='<div class="'+cls+'">'+SECS[i].icon+" "+SECS[i].label+mark+"</div>";
+    var c=i<S.sec?"stab st-done":i===S.sec?"stab st-act":"stab st-pend";
+    h+='<div class="'+c+'">'+SECS[i].icon+" "+SECS[i].label+(i<S.sec?" ✓":"")+"</div>";
   }
-  el("stabs").innerHTML=html;
-  el("slabel").textContent=SECS[S.sec].icon+" "+SECS[S.sec].label+(S.sec===1?" · 2 Passages":"")+" · "+(S.sec===1?"30":"20")+" min";
+  el("stabs").innerHTML=h;
+  el("slabel").textContent=SECS[S.sec].icon+" "+SECS[S.sec].label+(S.sec===1?" — 2 Passages":"")+", "+(S.sec===1?"30":"20")+" min";
   el("scount").textContent="Section "+(S.sec+1)+" of 3";
 }
 
 function renderQs(){
-  var qs=SECS[S.sec].qs;
-  var ans=S.ans[S.sec];
-  var h="";
+  var qs=SECS[S.sec].qs, ans=S.ans[S.sec], h="", lastGi=-1;
   if(S.sec===1){
-    h+=mkPassage("Reading Passage 1 — Technology in Education",P1,"");
-    h+='<div class="rnote">Questions 1–10 are based on Passage 1. For Questions 1–5 choose True, False, or Not Given.</div>';
+    h+=mkPassage("Passage 1 — The Psychology of Colour in the Workplace",P1,"");
+    h+='<div class="rnote">📌 Read Passage 1 carefully, then answer Questions 1–10 below.</div>';
   }
   for(var i=0;i<20;i++){
     if(S.sec===1&&i===10){
-      h+=mkPassage("Reading Passage 2 — A Balanced Diet",P2,"margin-top:26px;");
-      h+='<div class="rnote">Questions 11–20 are based on Passage 2. For Questions 11–15 choose True, False, or Not Given.</div>';
+      h+=mkPassage("Passage 2 — Sleep Deprivation and Student Performance",P2,"margin-top:28px;");
+      h+='<div class="rnote">📌 Read Passage 2 carefully, then answer Questions 11–20 below.</div>';
     }
-    h+=mkQ(i,qs[i],ans[i]);
+    var q=qs[i];
+    if(q.gi!==undefined&&q.gi!==lastGi&&q.ginstr){
+      h+=mkGinstr(q.ginstr); lastGi=q.gi;
+    }
+    h+=mkQ(i,q,ans[i]);
   }
   el("qarea").innerHTML=h;
   updProg();
@@ -375,8 +412,24 @@ function renderQs(){
 
 function mkPassage(title,paras,style){
   var h='<div class="passage" style="'+style+'"><h3>📖 '+title+'</h3>';
-  for(var i=0;i<paras.length;i++) h+="<p>"+paras[i]+"</p>";
+  for(var i=0;i<paras.length;i++){
+    if(typeof paras[i]==="object"){
+      h+='<p><span class="plbl">'+paras[i].lbl+'</span>'+paras[i].txt+'</p>';
+    } else {
+      h+="<p>"+paras[i]+"</p>";
+    }
+  }
   return h+"</div>";
+}
+
+function mkGinstr(g){
+  var h='<div class="ginstr"><strong>'+g.title+'</strong>'+g.body;
+  if(g.hlist){
+    h+='<div class="hlist">';
+    for(var i=0;i<g.hlist.length;i++) h+='<div>'+g.hlist[i]+'</div>';
+    h+='</div>';
+  }
+  return h+'</div>';
 }
 
 function mkQ(i,q,sel){
@@ -390,162 +443,95 @@ function mkQ(i,q,sel){
 }
 
 function updProg(){
-  var done=0;
-  for(var i=0;i<20;i++) if(S.ans[S.sec][i]!==null) done++;
+  var done=0; for(var i=0;i<20;i++) if(S.ans[S.sec][i]!==null) done++;
   el("plabel").textContent=done+" / 20 answered";
   el("pfill").style.width=(done/20*100)+"%";
   var left=20-done, um=el("unansmsg");
   if(left>0){um.textContent="⚠ "+left+" question"+(left>1?"s":"")+" unanswered";um.className="unans";}
-  else{um.textContent="✅ All questions answered — ready to submit!";um.className="unans ok";}
+  else{um.textContent="✅ All answered — ready to submit!";um.className="unans ok";}
 }
 
-// Click delegation for answer options
-el("qarea") && document.addEventListener("click",function(e){
+document.addEventListener("click",function(e){
   var opt=e.target.closest(".opt");
   if(!opt||!el("qarea").contains(opt)) return;
   var qi=parseInt(opt.dataset.qi), oi=parseInt(opt.dataset.oi);
   S.ans[S.sec][qi]=oi;
-  var card=el("qc-"+qi);
-  var allOpts=card.querySelectorAll(".opt");
+  var allOpts=el("qc-"+qi).querySelectorAll(".opt");
   for(var k=0;k<allOpts.length;k++) allOpts[k].classList.toggle("sel",k===oi);
-  updProg();
-  el("alertbox").classList.remove("show");
+  updProg(); el("alertbox").classList.remove("show");
 });
 
-// ── TIMER ─────────────────────────────────────────────────────
-function startTimer(){
-  updClock();
-  S.tid=setInterval(function(){
-    S.timerSecs--;
-    updClock();
-    if(S.timerSecs<=0){clearInterval(S.tid);autoSubmit();}
-  },1000);
-}
+// ── TIMER ──────────────────────────────────────────────────────
+function startTimer(){updClock();S.tid=setInterval(function(){S.timerSecs--;updClock();if(S.timerSecs<=0){clearInterval(S.tid);autoSubmit();}},1000);}
 function updClock(){
-  var m=Math.floor(S.timerSecs/60), s=S.timerSecs%60;
-  var t=el("tclock");
+  var m=Math.floor(S.timerSecs/60),s=S.timerSecs%60,t=el("tclock");
   t.textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;
   t.className="tclock no-print";
-  if(S.timerSecs<=60) t.classList.add("danger");
-  else if(S.timerSecs<=300) t.classList.add("warn");
+  if(S.timerSecs<=60) t.classList.add("danger"); else if(S.timerSecs<=300) t.classList.add("warn");
 }
-function autoSubmit(){
-  for(var i=0;i<20;i++) if(S.ans[S.sec][i]===null) S.ans[S.sec][i]=-1;
-  scoreSec();
-  toast("Time is up! Your answers were submitted automatically.");
-}
+function autoSubmit(){for(var i=0;i<20;i++) if(S.ans[S.sec][i]===null) S.ans[S.sec][i]=-1; scoreSec(); toast("Time is up! Answers submitted automatically.");}
 
-// ── SUBMIT ────────────────────────────────────────────────────
+// ── SUBMIT ─────────────────────────────────────────────────────
 function submitSection(){
-  var left=0;
-  for(var i=0;i<20;i++) if(S.ans[S.sec][i]===null) left++;
-  if(left>0){
-    var ab=el("alertbox");
-    ab.textContent="You have "+left+" unanswered question"+(left>1?"s":"")+". Please answer all questions before submitting.";
-    ab.classList.add("show");
-    goTop(); return;
-  }
-  clearInterval(S.tid);
-  scoreSec();
+  var left=0; for(var i=0;i<20;i++) if(S.ans[S.sec][i]===null) left++;
+  if(left>0){var ab=el("alertbox");ab.textContent="You have "+left+" unanswered question"+(left>1?"s":"")+". Please answer all questions before submitting.";ab.classList.add("show");goTop();return;}
+  clearInterval(S.tid); scoreSec();
 }
-
 function scoreSec(){
-  var qs=SECS[S.sec].qs, score=0;
+  var qs=SECS[S.sec].qs,score=0;
   for(var i=0;i<20;i++) if(S.ans[S.sec][i]===qs[i].ans) score++;
   S.scores[S.sec]=score;
-  if(S.sec<2){S.sec++; showBetween(score);}
-  else showResults();
+  if(S.sec<2){S.sec++;showBetween(score);}else showResults();
 }
-
 function showBetween(score){
-  var prev=SECS[S.sec-1].icon+" "+SECS[S.sec-1].label;
-  var next=SECS[S.sec].icon+" "+SECS[S.sec].label;
-  var secIdx=S.sec;
+  var prev=SECS[S.sec-1].icon+" "+SECS[S.sec-1].label, next=SECS[S.sec].icon+" "+SECS[S.sec].label, si=S.sec;
   el("qarea").innerHTML='<div class="card bscard"><div class="icon">✅</div><h2>'+prev+' Complete!</h2><p style="margin:10px 0 8px">You scored <strong style="color:#0077aa;font-size:1.1em">'+score+' / 20</strong> in this section.</p><p style="margin-bottom:28px">Get ready for <strong>'+next+'</strong>.</p><button id="btn-next" class="btn btn-p">Start '+next+' &#x279C;</button></div>';
-  el("tclock").textContent="Done";
-  el("unansmsg").textContent="";
-  el("btn-next").addEventListener("click",function(){showSec(secIdx);});
-  goTop();
+  el("tclock").textContent="Done"; el("unansmsg").textContent="";
+  el("btn-next").addEventListener("click",function(){showSec(si);}); goTop();
 }
 
-// ── RESULTS ───────────────────────────────────────────────────
+// ── RESULTS ────────────────────────────────────────────────────
 function showResults(){
-  clearInterval(S.tid); S.done=true;
-  showScreen("scr-r");
-  var total=S.scores[0]+S.scores[1]+S.scores[2];
-  var pct=Math.round(total/60*100);
+  clearInterval(S.tid); S.done=true; showScreen("scr-r");
+  var total=S.scores[0]+S.scores[1]+S.scores[2], pct=Math.round(total/60*100);
   var band,bdg,tag,advice;
-  if(pct>=75){
-    band="IELTS Band 5 — Ready"; bdg="bg-5";
-    tag="Excellent work, "+S.name+"! Your English is at approximately IELTS Band 5. With focused preparation over the next 6 months, reaching Band 5.5 or higher is very achievable.";
-    advice=["Expand your <strong>academic vocabulary</strong> — learn 10 new IELTS words daily.","Practise <strong>IELTS Reading strategies</strong>: skimming, scanning, True/False/Not Given.","Begin <strong>IELTS Writing Tasks 1 and 2</strong> with regular feedback from your teacher.","Review complex grammar: <strong>perfect tenses, passive voice, conditionals</strong>.","Practise <strong>IELTS Speaking Parts 1–3</strong> — record yourself and review.","Read English news and academic articles daily to build speed and comprehension.","<strong>Target:</strong> Aim for Band 5.5 or above in your IELTS exam."];
-  } else if(pct>=55){
-    band="IELTS Band 4.5 — On Track"; bdg="bg-45";
-    tag="Good effort, "+S.name+"! You are at approximately IELTS Band 4.5. Consistent study over 6 months can bring you to Band 5 or above.";
-    advice=["Expand your <strong>vocabulary</strong> — learn 10 new IELTS words each day.","Review key grammar: <strong>present perfect, passive voice, and conditional sentences</strong>.","Practise <strong>IELTS Reading</strong>: True/False/Not Given, multiple choice, and matching tasks.","Build your <strong>reading speed and comprehension</strong> — aim for 250+ words per minute.","Start practising <strong>IELTS Writing Task 1 and 2</strong> at a basic level.","Use IELTS preparation books and apps at Band 4.5–5 level.","<strong>Target:</strong> Reach Band 5.0 or above in your IELTS exam."];
-  } else {
-    band="Below Band 4.5 — Needs Focus"; bdg="bg-lo";
-    tag="Thank you for completing the test, "+S.name+". Your current level is below Band 4.5, but 6 months of focused preparation is enough time to make significant progress.";
-    advice=["Build your <strong>core vocabulary</strong> — focus on the most common 1,500–2,000 English words.","Review basic grammar: <strong>present and past tenses, articles, and prepositions</strong>.","Read short English texts every day and practise basic comprehension.","Use IELTS preparation materials starting from Band 4 level.","Listen to English daily — <strong>BBC Learning English</strong> is an excellent free resource.","Attend all your preparation classes and work closely with your teacher.","<strong>Target:</strong> Build a strong foundation and reach Band 4.5 by exam time."];
-  }
-  var snames=["Vocabulary","Reading","Grammar"];
-  var col=function(p){return p>=75?"#007a3d":p>=55?"#c87800":"#cc2200";};
-  var spcts=S.scores.map(function(s){return Math.round(s/20*100);});
+  if(pct>=75){band="IELTS Band 5 — Ready";bdg="bg-5";tag="Excellent work, "+S.name+"! Your English is at approximately IELTS Band 5. With focused preparation over the next 6 months, reaching Band 5.5 or higher is very achievable.";advice=["Expand your <strong>academic vocabulary</strong> — learn 10 new IELTS words daily.","Practise <strong>IELTS Reading strategies</strong>: skimming, scanning, True/False/Not Given.","Begin <strong>IELTS Writing Tasks 1 and 2</strong> with regular feedback from your teacher.","Review complex grammar: <strong>perfect tenses, passive voice, conditionals</strong>.","Practise <strong>IELTS Speaking Parts 1–3</strong> — record yourself and review.","Read English news and academic articles daily to build speed and comprehension.","<strong>Target:</strong> Aim for Band 5.5 or above in your IELTS exam."];}
+  else if(pct>=55){band="IELTS Band 4.5 — On Track";bdg="bg-45";tag="Good effort, "+S.name+"! You are at approximately IELTS Band 4.5. Consistent study over 6 months can bring you to Band 5 or above.";advice=["Expand your <strong>vocabulary</strong> — learn 10 new IELTS words each day.","Review key grammar: <strong>present perfect, passive voice, and conditional sentences</strong>.","Practise <strong>IELTS Reading</strong>: True/False/Not Given, matching, sentence completion.","Build your <strong>reading speed</strong> — aim for 250+ words per minute.","Start practising <strong>IELTS Writing Task 1 and 2</strong> at a basic level.","Use IELTS preparation books at Band 4.5–5 level.","<strong>Target:</strong> Reach Band 5.0 or above in your IELTS exam."];}
+  else{band="Below Band 4.5 — Needs Focus";bdg="bg-lo";tag="Thank you for completing the test, "+S.name+". Your current level is below Band 4.5, but 6 months of focused preparation is enough time to make significant progress.";advice=["Build your <strong>core vocabulary</strong> — focus on the most common 1,500–2,000 English words.","Review basic grammar: <strong>present and past tenses, articles, and prepositions</strong>.","Read short English texts every day and practise comprehension.","Use IELTS preparation materials starting from Band 4 level.","Listen to English daily — <strong>BBC Learning English</strong> is an excellent free resource.","Attend all your preparation classes and work closely with your teacher.","<strong>Target:</strong> Build a strong foundation and reach Band 4.5 by exam time."];}
+  var sn=["Vocabulary","Reading","Grammar"], col=function(p){return p>=75?"#007a3d":p>=55?"#c87800":"#cc2200";};
+  var sp=S.scores.map(function(s){return Math.round(s/20*100);}), sb="";
+  for(var i=0;i<3;i++) sb+='<div class="sbox"><div class="sbig">'+S.scores[i]+'/20</div><div class="ssm">'+sn[i]+'<br><span style="color:'+col(sp[i])+';font-weight:700">'+sp[i]+'%</span></div></div>';
+  var al=""; for(var j=0;j<advice.length;j++) al+="<li>"+advice[j]+"</li>";
   var date=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
-  var sboxes="";
-  for(var i=0;i<3;i++) sboxes+='<div class="sbox"><div class="sbig">'+S.scores[i]+'/20</div><div class="ssm">'+snames[i]+'<br><span style="color:'+col(spcts[i])+';font-weight:700">'+spcts[i]+'%</span></div></div>';
-  var alist=""; for(var j=0;j<advice.length;j++) alist+="<li>"+advice[j]+"</li>";
-  el("certarea").innerHTML='<div class="cert"><p class="corg">Higher Colleges of Technology &nbsp;·&nbsp; Abu Dhabi</p><h2 class="ctitle">IELTS Placement Certificate</h2><p class="csub">This certifies that the following student completed the IELTS Placement Assessment</p><h3 class="cname">'+S.name+'</h3><p class="cdate">HCT NCHR 0103 &nbsp;·&nbsp; Date: '+date+'</p><div class="cbadge '+bdg+'">'+band+'</div><p class="ctag">'+tag+'</p><div class="sgrid">'+sboxes+'</div><div class="stotal"><div class="sbig">'+total+' / 60</div><div class="ssm">Total Score &nbsp;·&nbsp; <span style="color:'+col(pct)+';font-weight:700">'+pct+'%</span></div></div><div class="advice"><h4>📋 Your Personalised 6-Month Study Plan</h4><ul>'+alist+'</ul></div><p class="cfoot">Designed by: Nazila Motahari &nbsp;·&nbsp; HCT NCHR 0103 &nbsp;·&nbsp; Higher Colleges of Technology</p></div>';
+  el("certarea").innerHTML='<div class="cert"><p class="corg">Higher Colleges of Technology &nbsp;·&nbsp; Abu Dhabi</p><h2 class="ctitle">IELTS Placement Certificate</h2><p class="csub">This certifies that the following student completed the IELTS Placement Assessment</p><h3 class="cname">'+S.name+'</h3><p class="cdate">HCT NCHR 0103 &nbsp;·&nbsp; Date: '+date+'</p><div class="cbadge '+bdg+'">'+band+'</div><p class="ctag">'+tag+'</p><div class="sgrid">'+sb+'</div><div class="stotal"><div class="sbig">'+total+' / 60</div><div class="ssm">Total Score &nbsp;·&nbsp; <span style="color:'+col(pct)+';font-weight:700">'+pct+'%</span></div></div><div class="advice"><h4>📋 Your Personalised 6-Month Study Plan</h4><ul>'+al+'</ul></div><p class="cfoot">Designed by: Nazila Motahari &nbsp;·&nbsp; HCT NCHR 0103 &nbsp;·&nbsp; Higher Colleges of Technology</p></div>';
   goTop();
 }
 
-// ── SAVE / LOAD / RESET ───────────────────────────────────────
+// ── SAVE / LOAD / RESET ────────────────────────────────────────
 function saveProgress(){
   var d={name:S.name,sec:S.sec,ans:S.ans,scores:S.scores,timerSecs:S.timerSecs,done:S.done,ts:new Date().toISOString()};
-  var a=document.createElement("a");
-  a.href=URL.createObjectURL(new Blob([JSON.stringify(d)],{type:"application/json"}));
-  a.download="ielts_"+S.name.replace(/\s+/g,"_")+".json"; a.click();
-  toast("Progress saved!");
+  var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([JSON.stringify(d)],{type:"application/json"})); a.download="ielts_"+S.name.replace(/\s+/g,"_")+".json"; a.click(); toast("Progress saved!");
 }
-
 function loadProgress(){
   var inp=document.createElement("input"); inp.type="file"; inp.accept=".json";
-  inp.onchange=function(e){
-    var f=e.target.files[0]; if(!f) return;
-    var r=new FileReader();
-    r.onload=function(ev){
-      try{
-        var d=JSON.parse(ev.target.result);
-        S.name=d.name; S.sec=d.sec; S.ans=d.ans; S.scores=d.scores; S.timerSecs=d.timerSecs; S.done=d.done;
-        el("inp-name").value=d.name;
-        setMsg("Progress loaded for "+d.name+". Saved: "+new Date(d.ts).toLocaleString(), true);
-        if(d.done||d.scores.every(function(s){return s!==null;})) showResults();
-        else showSec(d.sec, d.timerSecs);
-      }catch(err){setMsg("Invalid file — please use a saved .json progress file.");}
-    };
-    r.readAsText(f);
-  };
-  inp.click();
+  inp.onchange=function(e){var f=e.target.files[0];if(!f) return;var r=new FileReader();r.onload=function(ev){try{var d=JSON.parse(ev.target.result);S.name=d.name;S.sec=d.sec;S.ans=d.ans;S.scores=d.scores;S.timerSecs=d.timerSecs;S.done=d.done;el("inp-name").value=d.name;setMsg("Progress loaded for "+d.name+". Saved: "+new Date(d.ts).toLocaleString(),true);if(d.done||d.scores.every(function(s){return s!==null;})) showResults(); else showSec(d.sec,d.timerSecs);}catch(err){setMsg("Invalid file — please use a saved .json progress file.");}};r.readAsText(f);};inp.click();
 }
-
 function confirmReset(){
   if(!confirm("Reset the test? All progress will be lost.")) return;
-  clearInterval(S.tid);
-  S={name:"",sec:0,ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],scores:[null,null,null],timerSecs:0,tid:null,done:false};
-  showScreen("scr-w");
-  el("inp-name").value=""; el("wmsg").textContent=""; goTop();
+  clearInterval(S.tid); S={name:"",sec:0,ans:[Array(20).fill(null),Array(20).fill(null),Array(20).fill(null)],scores:[null,null,null],timerSecs:0,tid:null,done:false};
+  showScreen("scr-w"); el("inp-name").value=""; el("wmsg").textContent=""; goTop();
 }
 
-// ── EVENT LISTENERS ───────────────────────────────────────────
-el("btn-start").addEventListener("click", startTest);
-el("btn-load").addEventListener("click", loadProgress);
-el("inp-name").addEventListener("keydown", function(e){if(e.key==="Enter") startTest();});
-el("btn-save").addEventListener("click", saveProgress);
-el("btn-reset").addEventListener("click", confirmReset);
-el("btn-submit").addEventListener("click", submitSection);
-el("btn-print").addEventListener("click", function(){window.print();});
-el("btn-newtest").addEventListener("click", confirmReset);
-el("btn-top").addEventListener("click", goTop);
+// ── EVENT LISTENERS ────────────────────────────────────────────
+el("btn-start").addEventListener("click",startTest);
+el("btn-load").addEventListener("click",loadProgress);
+el("inp-name").addEventListener("keydown",function(e){if(e.key==="Enter") startTest();});
+el("btn-save").addEventListener("click",saveProgress);
+el("btn-reset").addEventListener("click",confirmReset);
+el("btn-submit").addEventListener("click",submitSection);
+el("btn-print").addEventListener("click",function(){window.print();});
+el("btn-newtest").addEventListener("click",confirmReset);
+el("btn-top").addEventListener("click",goTop);
 </script>
 </body>
 </html>
